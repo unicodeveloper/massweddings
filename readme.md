@@ -61,42 +61,96 @@ The result is cached in `data/weddings.json` and served from there, so the map l
 
 The rebuild runs in stages (one article pass, then state batches) rather than one long request. A single call covering the whole pipeline outlives the HTTP client's timeout, and staging means a failure late in the run keeps everything already written.
 
-## Running it
+## Setting it up
 
-Requires Node 22+, a Mapbox token, a Valyu API key, and — strongly recommended — an OpenAI key for the extraction step.
+Node 22+ and pnpm. Three services are involved, but only a Mapbox token is needed to see the app running — the dataset ships with the repo.
+
+| Key | Needed? | What it does | Where to get it |
+| --- | --- | --- | --- |
+| `NEXT_PUBLIC_MAPBOX_TOKEN` | **Required** | Renders the basemap. Without it the map area shows a "token missing" notice and nothing else — the panels still work. | [account.mapbox.com/access-tokens](https://account.mapbox.com/access-tokens/) — the free tier is plenty |
+| `VALYU_API_KEY` | **Required to rebuild** | Every search, extraction, briefing and FAAC figure. The committed dataset renders without it; rebuilding, the state briefings and Live Feed / Intel do not. | [platform.valyu.ai](https://platform.valyu.ai) |
+| `OPENAI_API_KEY` | Strongly recommended | Turns each article into a structured record — state, date, couples, cost, sponsor, held-or-announced. Without it the pipeline falls back to keyword extraction, which is much blunter and will miss ceremonies. Only used when rebuilding. | [platform.openai.com/api-keys](https://platform.openai.com/api-keys) |
 
 ```bash
 pnpm install
-cp .env.example .env.local   # then fill in the keys
+cp .env.example .env.local     # then fill in the keys below
 npm run dev
 ```
 
-The map loads from the committed dataset. To rebuild it from scratch:
+That is enough to browse everything: the map loads from `data/weddings.json`, which is committed, so first paint needs no API calls at all.
 
-```bash
-npm run seed          # with the dev server running; takes several minutes
+### The full variable list
+
+```env
+# Required
+NEXT_PUBLIC_MAPBOX_TOKEN=pk.your_token_here
+VALYU_API_KEY=your_valyu_key_here
+
+# Recommended — extraction quality when rebuilding the dataset
+OPENAI_API_KEY=sk-your_key_here
+OPENAI_MODEL=gpt-4.1-mini
+
+# 'self-hosted' (default) runs everything on the key above.
+# 'valyu' puts Live Feed and Intel behind a sign-in — see below.
+NEXT_PUBLIC_APP_MODE=self-hosted
+
+# Deployment only
+NEXT_PUBLIC_SITE_URL=https://your-domain          # absolute URL for share cards
+ALLOW_REBUILD=false                               # disable the Rebuild button in public
 ```
 
-To regenerate the reference data:
-
-```bash
-npm run build:reference    # population + poverty, straight from HDX
-npm run build:dhs          # 2024 survey indicators, straight from The DHS Program
-npm run build:faac 2024    # FAAC allocations via Valyu
-npm run build:faac 2024 --fill-gaps   # retry only the states still unsourced
-```
+`NEXT_PUBLIC_SITE_URL` matters more than it looks: Open Graph and Twitter both reject relative image URLs, so without it share cards render blank. On Railway the injected `RAILWAY_PUBLIC_DOMAIN` is used automatically; everywhere else set it explicitly. It falls back to `http://localhost:3000` in development.
 
 ### Who pays for the live searches
 
-The map, the charts and every cached figure are open to anyone. The two features that hit Valyu on demand — Live Feed and Intel — can be put behind a sign-in so they run on the reader's own credits rather than yours:
+The map, the charts and every cached figure are open to anyone. The two features that hit Valyu on demand — **Live Feed** and **Intel** — can be put behind a sign-in so they run on the reader's own credits rather than yours. Set `NEXT_PUBLIC_APP_MODE=valyu` and add the OAuth block:
 
 ```env
-NEXT_PUBLIC_APP_MODE=valyu     # plus the OAuth block in .env.example
+NEXT_PUBLIC_VALYU_AUTH_URL=https://auth.valyu.ai
+NEXT_PUBLIC_VALYU_CLIENT_ID=your-oauth-client-id
+VALYU_CLIENT_SECRET=your-oauth-client-secret
+VALYU_APP_URL=https://platform.valyu.ai
+NEXT_PUBLIC_REDIRECT_URI=http://localhost:3000/auth/valyu/callback
 ```
 
-Left as `self-hosted` (the default), those features use the server's own `VALYU_API_KEY` and no sign-in appears.
+OAuth credentials are not self-serve — contact contact@valyu.ai. `NEXT_PUBLIC_REDIRECT_URI` **must match the port you are actually serving on**, or the callback lands on the wrong app; if `next dev` moves you to 3001 because 3000 is taken, update it. Left as `self-hosted` (the default), those two features use the server's own `VALYU_API_KEY` and no sign-in appears anywhere.
 
-On a public deployment, set `ALLOW_REBUILD=false` so visitors cannot spend your API credits.
+### Rebuilding the data
+
+Everything below writes into `data/` and is committed, so you only need these to refresh.
+
+```bash
+# Ceremonies — ~60 Valyu searches plus a per-state sweep. Several minutes.
+# Needs the dev server running: it drives the same endpoint the Rebuild button hits.
+npm run dev
+npm run seed
+SEED_URL=http://localhost:3001 npm run seed   # if dev picked another port
+
+# Population + poverty, straight from HDX. No API key needed.
+npm run build:reference
+
+# 2024 survey indicators, straight from The DHS Program. No API key needed.
+npm run build:dhs
+
+# FAAC allocations via Valyu. Needs VALYU_API_KEY.
+# The `--` is load-bearing: without it npm swallows the flag and you get a full
+# rebuild instead of a gap fill.
+npm run build:faac -- 2024
+npm run build:faac -- 2024 --fill-gaps   # retry only the states still unsourced
+```
+
+Half of those need no credentials at all: `build:reference` and `build:dhs` pull
+from open datasets on HDX and The DHS Program, so the population, poverty and
+2024 survey figures can be re-derived from source for free.
+
+### Deploying
+
+```bash
+npm run build && npm start
+```
+
+Set `ALLOW_REBUILD=false` in production. Without it, `POST /api/weddings` is open
+and any visitor can trigger a full rebuild on your API credits.
 
 ## Reading it honestly
 
