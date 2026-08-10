@@ -63,13 +63,24 @@ The rebuild runs in stages (one article pass, then state batches) rather than on
 
 ## Setting it up
 
-Node 22+ and pnpm. Three services are involved, but only a Mapbox token is needed to see the app running — the dataset ships with the repo.
+Node 22+ and pnpm. Three services are involved, but only a Mapbox token is
+needed to see the app running — the dataset ships with the repo.
 
-| Key | Needed? | What it does | Where to get it |
-| --- | --- | --- | --- |
-| `NEXT_PUBLIC_MAPBOX_TOKEN` | **Required** | Renders the basemap. Without it the map area shows a "token missing" notice and nothing else — the panels still work. | [account.mapbox.com/access-tokens](https://account.mapbox.com/access-tokens/) — the free tier is plenty |
-| `VALYU_API_KEY` | **Required to rebuild** | Every search, extraction, briefing and FAAC figure. The committed dataset renders without it; rebuilding, the state briefings and Live Feed / Intel do not. | [platform.valyu.ai](https://platform.valyu.ai) |
-| `OPENAI_API_KEY` | Strongly recommended | Turns each article into a structured record — state, date, couples, cost, sponsor, held-or-announced. Without it the pipeline falls back to keyword extraction, which is much blunter and will miss ceremonies. Only used when rebuilding. | [platform.openai.com/api-keys](https://platform.openai.com/api-keys) |
+### 1. Grab your API keys
+
+- **Mapbox** → **[console.mapbox.com/account/access-tokens](https://console.mapbox.com/account/access-tokens/)** — free tier is plenty. *Required.*
+- **Valyu** → **[platform.valyu.ai](https://platform.valyu.ai)** — powers every search, extraction and briefing. *Required to rebuild the data, or to use Live Feed and Intel.*
+- **OpenAI** → **[platform.openai.com/api-keys](https://platform.openai.com/api-keys)** — used only when rebuilding, to turn articles into structured records. *Strongly recommended.*
+
+What each one costs you if it is missing:
+
+| Key | Needed? | What breaks without it |
+| --- | --- | --- |
+| `NEXT_PUBLIC_MAPBOX_TOKEN` | **Required** | The map area shows a "token missing" notice. Every panel and chart still works. |
+| `VALYU_API_KEY` | **To rebuild or research** | The committed dataset still renders. Rebuilding, the per-state briefings, Live Feed and Intel do not. |
+| `OPENAI_API_KEY` | Recommended | Extraction falls back to keyword matching, which is much blunter and will miss ceremonies. Only matters when rebuilding. |
+
+### 2. Install and run
 
 ```bash
 pnpm install
@@ -79,7 +90,7 @@ npm run dev
 
 That is enough to browse everything: the map loads from `data/weddings.json`, which is committed, so first paint needs no API calls at all.
 
-### The full variable list
+### 3. The full variable list
 
 ```env
 # Required
@@ -101,7 +112,7 @@ ALLOW_REBUILD=false                               # disable the Rebuild button i
 
 `NEXT_PUBLIC_SITE_URL` matters more than it looks: Open Graph and Twitter both reject relative image URLs, so without it share cards render blank. On Railway the injected `RAILWAY_PUBLIC_DOMAIN` is used automatically; everywhere else set it explicitly. It falls back to `http://localhost:3000` in development.
 
-### Who pays for the live searches
+### 4. Who pays for the live searches
 
 The map, the charts and every cached figure are open to anyone. The two features that hit Valyu on demand — **Live Feed** and **Intel** — can be put behind a sign-in so they run on the reader's own credits rather than yours. Set `NEXT_PUBLIC_APP_MODE=valyu` and add the OAuth block:
 
@@ -115,7 +126,7 @@ NEXT_PUBLIC_REDIRECT_URI=http://localhost:3000/auth/valyu/callback
 
 OAuth credentials are not self-serve — contact contact@valyu.ai. `NEXT_PUBLIC_REDIRECT_URI` **must match the port you are actually serving on**, or the callback lands on the wrong app; if `next dev` moves you to 3001 because 3000 is taken, update it. Left as `self-hosted` (the default), those two features use the server's own `VALYU_API_KEY` and no sign-in appears anywhere.
 
-### Rebuilding the data
+### 5. Rebuilding the data
 
 Everything below writes into `data/` and is committed, so you only need these to refresh.
 
@@ -161,4 +172,4 @@ and any visitor can trigger a full rebuild on your API credits.
 
 ## Stack
 
-Next.js 16 · Mapbox GL + react-map-gl · Tailwind v4 · Zustand · [Valyu](https://www.valyu.ai) for search, structured extraction and answers · zod
+Next.js 16 · Mapbox GL + react-map-gl · Tailwind v4 · Zustand · [Valyu](https://platform.valyu.ai) for search, structured extraction and answers · zod
