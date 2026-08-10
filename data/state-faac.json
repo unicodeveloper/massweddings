@@ -1,0 +1,243 @@
+{
+  "builtAt": "2026-08-10T10:26:32.532Z",
+  "year": 2024,
+  "method": "Sourced through Valyu, restricted to NBS and outlets publishing NBS/BudgIT FAAC breakdowns. Every figure carries the URL it came from; unsourced states are omitted.",
+  "caveat": "FAAC figures are reported, not read from an official machine-readable dataset. Treat them as indicative and follow the source link before citing.",
+  "consultedSources": [
+    "https://punchng.com/12-states-allocations-rise-by-40-as-faac-hits-n4-5tn/",
+    "https://punchng.com/states-to-get-n5-5tn-faac-allocations-in-2024/",
+    "https://budgit.org/post_infographics/q3-2024-faac-allocations/",
+    "https://businessday.ng/business-economy/article/faac-disburses-n1-14-trn-to-federal-states-local-government-in-june-2024/",
+    "https://nairametrics.com/2024/09/05/top-10-nigerian-states-with-highest-external-debt-service-costs-in-2024/",
+    "https://punchng.com/32-states-got-55-of-revenue-from-faac-report/",
+    "https://nairametrics.com/2024/07/12/faac-lgas-get-n1-42-trillion-in-five-months-in-2024/",
+    "https://punchng.com/faac-allocation-rose-by-1-42-in-q2-2024-neiti/",
+    "https://nairametrics.com/2024/08/17/faac-fg-states-local-governments-share-n1-358-trillion-in-july-2024/",
+    "https://nairametrics.com/2024/05/17/faac-fg-states-lgs-share-n1-208-trillion-from-april-revenue/",
+    "https://www.thecable.ng/in-detail-how-states-shared-n24-9bn-ecological-funds-in-h1-2024/",
+    "https://businessday.ng/companies/article/faac-disbursed-n2-61trn-to-fg-states-lgs-in-august-nbs/",
+    "https://businessday.ng/news/article/faac-disbursement-jump-101-to-n2-07-trillion-in-one-year/",
+    "https://businessday.ng/news/article/fg-states-local-govts-share-n1-2trn-faac-allocation-in-may-2024/",
+    "https://punchng.com/fcta-disburses-n6-31bn-march-allocation-to-area-councils-stakeholders/",
+    "https://businessday.ng/news/article/fg-states-and-lgs-share-n3-473tn-in-q2-2024-neiti/",
+    "https://www.thecable.ng/neiti-fgs-faac-revenue-dropped-by-n41-4bn-in-q2-2024/",
+    "https://www.thecable.ng/in-detail-lagos-lgas-received-highest-faac-revenue-in-h1-2024/",
+    "https://nairametrics.com/2024/02/23/faac-fg-states-lgas-get-n1-15-trillion-in-february-2024/",
+    "https://punchng.com/account-for-faac-allocations-or-face-lawsuit-serap-tells-govs-fct-minister/",
+    "https://punchng.com/rivers-will-receive-federal-allocation-despite-legal-battle-fg/",
+    "https://punchng.com/24-states-cant-pay-salaries-without-fg-allocation-budgets/",
+    "https://www.premiumtimesng.com/promoted/751752-budgit-2024-ranking-zamfara-emerges-highest-in-igr-growth-in-nigeria.html"
+  ],
+  "allocations": [
+    {
+      "state": "Abia",
+      "allocationNairaBillion": 95.05,
+      "sourceUrl": "https://punchng.com/12-states-allocations-rise-by-40-as-faac-hits-n4-5tn/",
+      "note": "Actual allocation Jan‑May 2024, increase 50.5% under Tinubu"
+    },
+    {
+      "state": "Adamawa",
+      "allocationNairaBillion": 141.62,
+      "sourceUrl": "https://punchng.com/states-to-get-n5-5tn-faac-allocations-in-2024/",
+      "note": "Projected 2024 allocation per BudgIT (2024 approved budget)"
+    },
+    {
+      "state": "Akwa Ibom",
+      "allocationNairaBillion": 294.06,
+      "sourceUrl": "https://punchng.com/12-states-allocations-rise-by-40-as-faac-hits-n4-5tn/",
+      "note": "Actual allocation Jan‑May 2024, decline 14.3% under Tinubu"
+    },
+    {
+      "state": "Anambra",
+      "allocationNairaBillion": 114.52,
+      "sourceUrl": "https://punchng.com/12-states-allocations-rise-by-40-as-faac-hits-n4-5tn/",
+      "note": "Actual allocation Jan‑May 2024, increase 42.13% under Tinubu"
+    },
+    {
+      "state": "Bauchi",
+      "allocationNairaBillion": 196.12,
+      "sourceUrl": "https://punchng.com/states-to-get-n5-5tn-faac-allocations-in-2024/",
+      "note": "Projected 2024 allocation per BudgIT (2024 approved budget)"
+    },
+    {
+      "state": "Bayelsa",
+      "allocationNairaBillion": 261.03,
+      "sourceUrl": "https://punchng.com/12-states-allocations-rise-by-40-as-faac-hits-n4-5tn/",
+      "note": "Actual allocation Jan‑May 2024, decline 0.22% under Tinubu"
+    },
+    {
+      "state": "Benue",
+      "allocationNairaBillion": 120,
+      "sourceUrl": "https://punchng.com/states-to-get-n5-5tn-faac-allocations-in-2024/",
+      "note": "Projected 2024 allocation per BudgIT (2024 approved budget)"
+    },
+    {
+      "state": "Borno",
+      "allocationNairaBillion": 201.87,
+      "sourceUrl": "https://punchng.com/states-to-get-n5-5tn-faac-allocations-in-2024/",
+      "note": "Projected 2024 allocation per BudgIT (2024 approved budget)"
+    },
+    {
+      "state": "Delta",
+      "allocationNairaBillion": 564.29,
+      "sourceUrl": "https://punchng.com/states-to-get-n5-5tn-faac-allocations-in-2024/",
+      "note": "Projected FAAC allocation for 2024 per approved budget"
+    },
+    {
+      "state": "Ebonyi",
+      "allocationNairaBillion": 108.32,
+      "sourceUrl": "https://punchng.com/states-to-get-n5-5tn-faac-allocations-in-2024/",
+      "note": "Projected FAAC allocation for 2024 per approved budget"
+    },
+    {
+      "state": "Edo",
+      "allocationNairaBillion": 185.35,
+      "sourceUrl": "https://punchng.com/states-to-get-n5-5tn-faac-allocations-in-2024/",
+      "note": "Projected FAAC allocation for 2024 per approved budget"
+    },
+    {
+      "state": "Ekiti",
+      "allocationNairaBillion": 81.85,
+      "sourceUrl": "https://punchng.com/states-to-get-n5-5tn-faac-allocations-in-2024/",
+      "note": "Projected FAAC allocation for 2024 per approved budget"
+    },
+    {
+      "state": "Enugu",
+      "allocationNairaBillion": 120,
+      "sourceUrl": "https://punchng.com/states-to-get-n5-5tn-faac-allocations-in-2024/",
+      "note": "Projected FAAC allocation for 2024 per approved budget"
+    },
+    {
+      "state": "Federal Capital Territory",
+      "allocationNairaBillion": 6.32,
+      "sourceUrl": "https://punchng.com/fcta-disburses-n6-31bn-march-allocation-to-area-councils-stakeholders/",
+      "note": "Gross statutory allocation for March 2024 (disbursed to six area councils and other stakeholders)."
+    },
+    {
+      "state": "Gombe",
+      "allocationNairaBillion": 99.6,
+      "sourceUrl": "https://punchng.com/states-to-get-n5-5tn-faac-allocations-in-2024/",
+      "note": "Projected FAAC allocation for 2024 per approved budget"
+    },
+    {
+      "state": "Imo",
+      "allocationNairaBillion": 136,
+      "sourceUrl": "https://punchng.com/states-to-get-n5-5tn-faac-allocations-in-2024/",
+      "note": "Projected 2024 allocation per approved budget"
+    },
+    {
+      "state": "Jigawa",
+      "allocationNairaBillion": 107.5,
+      "sourceUrl": "https://punchng.com/states-to-get-n5-5tn-faac-allocations-in-2024/",
+      "note": "Projected 2024 allocation per approved budget"
+    },
+    {
+      "state": "Kaduna",
+      "allocationNairaBillion": 84.39,
+      "sourceUrl": "https://punchng.com/states-to-get-n5-5tn-faac-allocations-in-2024/",
+      "note": "Projected 2024 allocation per approved budget"
+    },
+    {
+      "state": "Kano",
+      "allocationNairaBillion": 152.34,
+      "sourceUrl": "https://punchng.com/12-states-allocations-rise-by-40-as-faac-hits-n4-5tn/",
+      "note": "Allocation rose 45.16% to N152.34bn in 2024"
+    },
+    {
+      "state": "Katsina",
+      "allocationNairaBillion": 148.06,
+      "sourceUrl": "https://punchng.com/states-to-get-n5-5tn-faac-allocations-in-2024/",
+      "note": "Projected 2024 allocation per approved budget"
+    },
+    {
+      "state": "Kebbi",
+      "allocationNairaBillion": 145.02,
+      "sourceUrl": "https://punchng.com/states-to-get-n5-5tn-faac-allocations-in-2024/",
+      "note": "Projected 2024 allocation per approved budget"
+    },
+    {
+      "state": "Kogi",
+      "allocationNairaBillion": 138.17,
+      "sourceUrl": "https://punchng.com/states-to-get-n5-5tn-faac-allocations-in-2024/",
+      "note": "Projected 2024 allocation per approved budget"
+    },
+    {
+      "state": "Kwara",
+      "allocationNairaBillion": 125.45,
+      "sourceUrl": "https://punchng.com/states-to-get-n5-5tn-faac-allocations-in-2024/",
+      "note": "Projected 2024 allocation per approved budget"
+    },
+    {
+      "state": "Lagos",
+      "allocationNairaBillion": 596.63,
+      "sourceUrl": "https://punchng.com/states-to-get-n5-5tn-faac-allocations-in-2024/",
+      "note": "Projected 2024 FAAC allocation (budget) from BudgIT data as reported by Punch"
+    },
+    {
+      "state": "Nasarawa",
+      "allocationNairaBillion": 96.95,
+      "sourceUrl": "https://punchng.com/states-to-get-n5-5tn-faac-allocations-in-2024/",
+      "note": "Projected 2024 FAAC allocation (budget) from BudgIT data as reported by Punch"
+    },
+    {
+      "state": "Niger",
+      "allocationNairaBillion": 236.9,
+      "sourceUrl": "https://punchng.com/states-to-get-n5-5tn-faac-allocations-in-2024/",
+      "note": "Projected 2024 FAAC allocation (budget) from BudgIT data as reported by Punch"
+    },
+    {
+      "state": "Ondo",
+      "allocationNairaBillion": 45.36,
+      "sourceUrl": "https://punchng.com/states-to-get-n5-5tn-faac-allocations-in-2024/",
+      "note": "Projected 2024 FAAC allocation (budget) from BudgIT data as reported by Punch"
+    },
+    {
+      "state": "Osun",
+      "allocationNairaBillion": 99.09,
+      "sourceUrl": "https://punchng.com/states-to-get-n5-5tn-faac-allocations-in-2024/",
+      "note": "Projected 2024 FAAC allocation (budget) from BudgIT data as reported by Punch"
+    },
+    {
+      "state": "Oyo",
+      "allocationNairaBillion": 201.27,
+      "sourceUrl": "https://punchng.com/states-to-get-n5-5tn-faac-allocations-in-2024/",
+      "note": "Projected 2024 FAAC allocation (budget) from BudgIT data as reported by Punch"
+    },
+    {
+      "state": "Plateau",
+      "allocationNairaBillion": 151.42,
+      "sourceUrl": "https://punchng.com/states-to-get-n5-5tn-faac-allocations-in-2024/",
+      "note": "Projected 2024 FAAC allocation (budget) from BudgIT data as reported by Punch"
+    },
+    {
+      "state": "Rivers",
+      "allocationNairaBillion": 344.5,
+      "sourceUrl": "https://punchng.com/12-states-allocations-rise-by-40-as-faac-hits-n4-5tn/",
+      "note": "Gross allocation for 2024 estimated by applying the reported 8.86% increase to the previous allocation of N316.51bn (under Buhari)."
+    },
+    {
+      "state": "Sokoto",
+      "allocationNairaBillion": 108,
+      "sourceUrl": "https://punchng.com/states-to-get-n5-5tn-faac-allocations-in-2024/",
+      "note": "Projected FAAC allocation for 2024 from budget data (Open Nigerian States, BudgIT‑backed)"
+    },
+    {
+      "state": "Taraba",
+      "allocationNairaBillion": 112,
+      "sourceUrl": "https://punchng.com/states-to-get-n5-5tn-faac-allocations-in-2024/",
+      "note": "Projected FAAC allocation for 2024 from budget data (Open Nigerian States, BudgIT‑backed)"
+    },
+    {
+      "state": "Yobe",
+      "allocationNairaBillion": 87.94,
+      "sourceUrl": "https://punchng.com/states-to-get-n5-5tn-faac-allocations-in-2024/",
+      "note": "Projected FAAC allocation for 2024 from budget data (Open Nigerian States, BudgIT‑backed)"
+    },
+    {
+      "state": "Zamfara",
+      "allocationNairaBillion": 65.28,
+      "sourceUrl": "https://www.premiumtimesng.com/promoted/751752-budgit-2024-ranking-zamfara-emerges-highest-in-igr-growth-in-nigeria.html",
+      "note": "FAAC allocation rose by 4.93% from N62.21bn to N65.28bn in 2024 (BudgIT report)"
+    }
+  ]
+}

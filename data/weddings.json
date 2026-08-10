@@ -1,0 +1,1617 @@
+{
+  "events": [
+    {
+      "id": "1aa57dcb-600b-4f50-af68-54f5889345d2",
+      "title": "Mass wedding held in Nigeria sees 1500 couples tie the knot",
+      "summary": "A mass wedding ceremony was held in Kano state on August 7, 2026, where 1500 couples, including widows and young women, were married in a state-sponsored event coordinated by the Kano State Hisbah Board. Each bride received a dowry of 200,000 naira and household items to support their new family life.",
+      "state": "Kano",
+      "city": "Kano",
+      "location": {
+        "latitude": 12.0022,
+        "longitude": 8.592,
+        "placeName": "Kano",
+        "state": "Kano",
+        "precision": "city"
+      },
+      "date": "2026-08-07",
+      "datePrecision": "day",
+      "year": 2026,
+      "couples": 1500,
+      "costNaira": 1500000000,
+      "dowryPerBrideNaira": 200000,
+      "sponsor": "Kano State Government",
+      "sponsorType": "state-government",
+      "beneficiaries": "widows",
+      "held": true,
+      "edition": "second edition",
+      "sources": [
+        {
+          "title": "Mass wedding held in Nigeria sees 1500 couples tie the knot",
+          "url": "https://www.1news.co.nz/2026/08/09/mass-wedding-held-in-nigeria-sees-1500-couples-tie-the-knot/",
+          "outlet": "1news.co.nz"
+        },
+        {
+          "title": "Kano State mass wedding: Who be di beneficiaries as Kano spend 1.5 billion naira on mass wedding for Muslims and Christians - BBC News Pidgin",
+          "url": "https://www.bbc.com/pidgin/articles/c8en90k733ro",
+          "outlet": "bbc.com"
+        },
+        {
+          "title": "Why Kano govt spent N1.5bn on mass wedding – Gov Yusuf – Daily Trust",
+          "url": "https://dailytrust.com/why-kano-govt-spent-n1-5bn-on-mass-wedding-gov-yusuf/",
+          "outlet": "dailytrust.com"
+        },
+        {
+          "title": "Widower who lost wife and 6 children in attack remarries in Nigerian mass wedding for 1,500 couples | Arab News",
+          "url": "https://www.arabnews.com/node/2653940/world",
+          "outlet": "arabnews.com"
+        },
+        {
+          "title": "Man Who Lost Wife, 6 Children in Kano Attack Remarries at Mass Wedding - Legit.ng",
+          "url": "https://www.legit.ng/nigeria/1723906-man-lost-wife-6-children-kano-attack-remarries-mass-wedding/",
+          "outlet": "legit.ng"
+        },
+        {
+          "title": "Kano conducts mass wedding for 1,500 widows - Newsworth Magazine",
+          "url": "https://www.newsworthmagazine.com/2026/08/kano-conducts-mass-wedding-for-1500-widows/",
+          "outlet": "newsworthmagazine.com"
+        },
+        {
+          "title": "1,500 Couples Say ‘I Do’ in Mass Wedding in Nigeria - Starconnect Media",
+          "url": "https://starconnectmedia.com/1500-couples-say-i-do-in-mass-wedding-in-nigeria/",
+          "outlet": "starconnectmedia.com"
+        },
+        {
+          "title": "Kano weds 1,500 couples, gifts house, Hajj, wife to widower who lost wife, six kids - 21st CENTURY CHRONICLE",
+          "url": "https://21stcenturychronicle.com/kano-weds-1500-couples-gifts-house-hajj-wife-to-widower-who-lost-wife-six-kids/",
+          "outlet": "21stcenturychronicle.com"
+        },
+        {
+          "title": "Μαζικός γάμος στη Νιγηρία: 1.500 ζευγάρια έδωσαν όρκους αιώνιας αγάπης",
+          "url": "https://www.parapolitika.gr/diethni/article/1774116/mazikos-gamos-sti-nigiria-1500-zeugaria-edosan-orkous-aionias-agapis-poios-o-logos-eikones-video",
+          "outlet": "parapolitika.gr"
+        },
+        {
+          "title": "Widower who lost wife and 6 children in attack remarries in Nigerian mass wedding for 1,500 couples - ABC News",
+          "url": "https://abcnews.com/International/wireStory/widower-lost-wife-6-children-attack-remarries-nigerian-135486405",
+          "outlet": "abcnews.com"
+        },
+        {
+          "title": "Widower who lost wife and 6 children in attack remarries in Nigerian mass wedding for 1,500 couples – Regional Media News",
+          "url": "https://www.regionalmedianews.com/world/widower-who-lost-wife-and-6-children-in-attack-remarries-in-nigerian-mass-wedding-for-1500-couples/",
+          "outlet": "regionalmedianews.com"
+        },
+        {
+          "title": "Widower who lost wife and 6 children in attack remarries in Nigerian mass wedding for 1,500 couples – Winnipeg Free Press",
+          "url": "https://www.winnipegfreepress.com/world/2026/08/08/widower-who-lost-wife-and-6-children-in-attack-remarries-in-nigerian-mass-wedding-for-1500-couples",
+          "outlet": "winnipegfreepress.com"
+        },
+        {
+          "title": "Governor Yusuf Officiates Mass Wedding Of 1,500...",
+          "url": "https://thetrumpet.ng/governor-yusuf-officiates-mass-wedding-of-1500-couples-in-kano/",
+          "outlet": "thetrumpet.ng"
+        },
+        {
+          "title": "Governor Yusuf officiates mass wedding of 1,500 couples in Kano",
+          "url": "https://thesun.ng/governor-yusuf-officiates-mass-wedding-of-1500-couples-in-kano/",
+          "outlet": "thesun.ng"
+        },
+        {
+          "title": "Yusuf officiates mass wedding of 1,500 couples in Kano",
+          "url": "https://thesun.ng/yusuf-officiates-mass-wedding-of-1500-couples-in-kano/",
+          "outlet": "thesun.ng"
+        },
+        {
+          "title": "Mass wedding held in Nigeria for 1,500 couples | AP News",
+          "url": "https://apnews.com/article/nigeria-mass-wedding-kano-07598a44c2a69b76d3e9f6ad2ff46b81",
+          "outlet": "apnews.com"
+        },
+        {
+          "title": "Watch: 1,500 Couples Get Married in Nigeria’s Government-Sponsored Ceremony | Videos",
+          "url": "https://www.hindustantimes.com/videos/watch-1-500-couples-get-married-in-nigeria-s-government-sponsored-ceremony-101786246507831.html",
+          "outlet": "hindustantimes.com"
+        },
+        {
+          "title": "Widower who lost wife and 6 children in attack remarries in Nigerian mass wedding for 1,500 couples - Newsday",
+          "url": "https://www.newsday.com/news/nation/nigeria-mass-wedding-kano-h35187",
+          "outlet": "newsday.com"
+        },
+        {
+          "title": "Widower who lost wife and 6 children in attack remarries in Nigerian mass wedding for 1,500 couples | International | winknews.com",
+          "url": "https://www.winknews.com/news/international/widower-who-lost-wife-and-6-children-in-attack-remarries-in-nigerian-mass-wedding-for/article_e367f45c-3082-51e4-878f-7b35e78886f4.html",
+          "outlet": "winknews.com"
+        },
+        {
+          "title": "Gov Yusuf stands in as guardian for terror victim during Kano mass wedding - Daily Post Nigeria",
+          "url": "https://dailypost.ng/2026/08/07/gov-yusuf-stands-in-as-guardian-for-terror-victim-during-kano-mass-wedding/",
+          "outlet": "dailypost.ng"
+        },
+        {
+          "title": "Widower who lost wife and 6 children in attack remarries in Nigerian mass wedding for 1,500 couples | World News | thecanadianpressnews.ca",
+          "url": "https://www.thecanadianpressnews.ca/world/widower-who-lost-wife-and-6-children-in-attack-remarries-in-nigerian-mass-wedding-for/article_70d6e8c0-e524-598b-b02b-c888f1d44509.html",
+          "outlet": "thecanadianpressnews.ca"
+        },
+        {
+          "title": "Sorrow to Solace: Kano Man Remarries Months After Losing Wife, 6 Children to Brutal Attack - Arewa Agenda",
+          "url": "https://arewaagenda.com/sorrow-solace-kano-man/",
+          "outlet": "arewaagenda.com"
+        },
+        {
+          "title": "Photos: Yusuf, Sanusi unite 1,500 couples in Kano mass wedding - Vanguard News",
+          "url": "https://www.vanguardngr.com/2026/08/photos-yusuf-sanusi-unite-1500-couples-in-kano-mass-wedding/",
+          "outlet": "vanguardngr.com"
+        },
+        {
+          "title": "Northwest Governors Committed to Peace and Development, says Governor Radda as Kano Holds Mass Wedding - Katsina Mirror",
+          "url": "https://www.katsinamirror.ng/2026/08/08/northwest-governors-committed-to-peace-and-development-says-governor-radda-as-kano-holds-mass-wedding/",
+          "outlet": "katsinamirror.ng"
+        },
+        {
+          "title": "Northwest govs committed to peace and devt, says Radda as Kano holds mass wedding  - TheNiche",
+          "url": "https://thenicheng.com/northwest-govs-committed-to-peace-and-devt-says-radda-as-kano-holds-mass-wedding/",
+          "outlet": "thenicheng.com"
+        },
+        {
+          "title": "Kano Gives ₦200,000, Furniture to Brides in Mass Wedding for 1,500 Couples",
+          "url": "https://www.tori.ng/news/324511/kano-gives-200000-furniture-to-brides-in-mass-wedd.html",
+          "outlet": "tori.ng"
+        },
+        {
+          "title": "Kano Mass Wedding: Gov Yusuf Urges Justice, Respect",
+          "url": "https://punchng.com/mass-wedding-kano-gov-urges-1500-newlyweds-to-uphold-justice-respect/",
+          "outlet": "punchng.com"
+        },
+        {
+          "title": "NIGERIA DAILY: ₦1.5bn Mass Wedding — Can Kano’s Newlyweds Afford Married Life? – Daily Trust",
+          "url": "https://dailytrust.com/nigeria-daily-%e2%82%a61-5bn-mass-wedding-can-kanos-newlyweds-afford-married-life/",
+          "outlet": "dailytrust.com"
+        },
+        {
+          "title": "Kano govt spends N1.5bn on mass wedding, distributes furniture, grants to couples - TheStar",
+          "url": "https://www.thestar.ng/kano-govt-spends-n1-5bn-on-mass-wedding-distributes-furniture-grants-to-couples/",
+          "outlet": "thestar.ng"
+        },
+        {
+          "title": "Kano Mass Wedding: Gov. Yusuf Charges Couples on Love, Responsibility - Arewa Agenda",
+          "url": "https://arewaagenda.com/kano-mass-wedding-gov-yusuf/",
+          "outlet": "arewaagenda.com"
+        },
+        {
+          "title": "1,500 couples tie the knot at mass wedding in Nigeria | South China Morning Post",
+          "url": "https://www.scmp.com/news/world/africa/article/3363416/1500-couples-tie-knot-mass-wedding-nigeria",
+          "outlet": "scmp.com"
+        },
+        {
+          "title": "Nigeria's mass wedding - and how telling lovers from fraudsters is proving tricky",
+          "url": "https://www.the-star.co.ke/news/world/2026-08-09-nigerias-mass-wedding-and-how-telling-lovers-from-fraudsters-is-proving-tricky",
+          "outlet": "the-star.co.ke"
+        },
+        {
+          "title": "Nigeria Mass Wedding Brings 1,500 Couples Together in Kano – Sri Lanka Guardian",
+          "url": "https://slguardian.org/nigeria-mass-wedding-brings-1500-couples-together-in-kano/",
+          "outlet": "slguardian.org"
+        },
+        {
+          "title": "Mass wedding: Kano govt spends N1.5bn for 1,500 couples - Tribune Online",
+          "url": "https://tribuneonlineng.com/mass-wedding-kano-govt-spends-n1-5bn-for-1500-couples/",
+          "outlet": "tribuneonlineng.com"
+        },
+        {
+          "title": "Nigeria's mass wedding - and how to tell lovers from fraudsters in Kano",
+          "url": "https://www.bbc.com/news/articles/cqx7q17531do",
+          "outlet": "bbc.com"
+        },
+        {
+          "title": "Nigeria's mass wedding – and how telling lovers from fraudsters is proving tricky - MyJoyOnline",
+          "url": "https://www.myjoyonline.com/nigerias-mass-wedding-and-how-telling-lovers-from-fraudsters-is-proving-tricky/",
+          "outlet": "myjoyonline.com"
+        },
+        {
+          "title": "1,500 couples tie the knot during a mass wedding in Nigeria - World News",
+          "url": "https://worldnews.whatfinger.com/2026/08/08/1500-couples-tie-the-knot-during-a-mass-wedding-in-nigeria",
+          "outlet": "worldnews.whatfinger.com"
+        },
+        {
+          "title": "Nigeria's mass wedding - and how to tell lovers from fraudsters in Kano - BBC News",
+          "url": "https://bbc.co.uk/news/articles/cqx7q17531do?amp=",
+          "outlet": "bbc.co.uk"
+        },
+        {
+          "title": "Kano spends N1.5 billion on mass wedding of 1,500 couples - 21st CENTURY CHRONICLE",
+          "url": "https://21stcenturychronicle.com/kano-spends-n1-5-billion-on-mass-wedding-of-1500-couples/",
+          "outlet": "21stcenturychronicle.com"
+        },
+        {
+          "title": "Nigeria marries 1,500 couples in mass wedding",
+          "url": "https://www.dw.com/en/nigeria-marries-1500-couples-in-mass-wedding/a-78291396",
+          "outlet": "dw.com"
+        },
+        {
+          "title": "Mass wedding in Nigeria sees 1500 couples tie the knot | Narooma News | Narooma, NSW",
+          "url": "https://www.naroomanewsonline.com.au/story/9326489/mass-wedding-in-nigeria-sees-1500-couples-tie-the-knot/",
+          "outlet": "naroomanewsonline.com.au"
+        },
+        {
+          "title": "Mass wedding in Nigeria sees 1500 couples tie the knot | The Scone Advocate | Scone, NSW",
+          "url": "https://www.sconeadvocate.com.au/story/9326489/mass-wedding-in-nigeria-sees-1500-couples-tie-the-knot/",
+          "outlet": "sconeadvocate.com.au"
+        },
+        {
+          "title": "Mass wedding in Nigeria sees 1500 couples tie the knot | Crookwell Gazette | Crookwell, NSW",
+          "url": "https://www.crookwellgazette.com.au/story/9326489/mass-wedding-in-nigeria-sees-1500-couples-tie-the-knot/",
+          "outlet": "crookwellgazette.com.au"
+        },
+        {
+          "title": "Mass wedding in Nigeria sees 1500 couples tie the knot | Bendigo Advertiser | Bendigo, VIC",
+          "url": "https://www.bendigoadvertiser.com.au/story/9326489/mass-wedding-in-nigeria-sees-1500-couples-tie-the-knot/",
+          "outlet": "bendigoadvertiser.com.au"
+        },
+        {
+          "title": "Mass wedding in Nigeria sees 1500 couples tie the knot | Illawarra Mercury | Wollongong, NSW",
+          "url": "https://www.illawarramercury.com.au/story/9326489/mass-wedding-in-nigeria-sees-1500-couples-tie-the-knot/",
+          "outlet": "illawarramercury.com.au"
+        },
+        {
+          "title": "Widower who lost wife and 6 children in attack remarries in Nigerian mass wedding for 1,500 couples - LA NACION",
+          "url": "https://www.lanacion.com.ar/usa/widower-who-lost-wife-and-6-children-in-attack-remarries-in-nigerian-mass-wedding-for-1500-couples-nid08082026/",
+          "outlet": "lanacion.com.ar"
+        },
+        {
+          "title": "Widower who lost wife and six children remarries in Nigeria mass wedding | Prism News",
+          "url": "https://www.prismnews.com/news/widower-who-lost-wife-and-six-children-remarries-in-nigeria",
+          "outlet": "prismnews.com"
+        },
+        {
+          "title": "Mass wedding in Nigeria sees 1500 couples tie the knot | Western Advocate | Bathurst, NSW",
+          "url": "https://www.westernadvocate.com.au/story/9326489/mass-wedding-in-nigeria-sees-1500-couples-tie-the-knot/",
+          "outlet": "westernadvocate.com.au"
+        },
+        {
+          "title": "Widower who lost wife and 6 children in attack remarries in Nigerian mass wedding for 1,500 couples - The Washington Post",
+          "url": "https://www.washingtonpost.com/world/2026/08/08/nigeria-mass-wedding-kano/c01cd42a-9348-11f1-9fdc-0a725c989a7b_story.html",
+          "outlet": "washingtonpost.com"
+        },
+        {
+          "title": "Nigeria's mass wedding - and how to tell lovers from fraudsters in Kano - BBC News",
+          "url": "https://www.bbc.co.uk/news/articles/cqx7q17531do",
+          "outlet": "bbc.co.uk"
+        },
+        {
+          "title": "Kano Hisbah Mass Wedding: Empowerment or Sharia?‎ -By Abdulkadir Salaudeen - Opinion Nigeria",
+          "url": "https://www.opinionnigeria.com/kano-hisbah-mass-wedding-empowerment-or-sharia-by-abdulkadir-salaudeen/",
+          "outlet": "opinionnigeria.com"
+        },
+        {
+          "title": "Kano Hisbah Mass Wedding: Empowerment or Sharia?‎ |",
+          "url": "https://thenews-chronicle.com/kano-hisbah-mass-wedding-empowerment-or-sharia/",
+          "outlet": "thenews-chronicle.com"
+        },
+        {
+          "title": "Why Kano govt spent N1.5bn on mass wedding – Gov Yusuf",
+          "url": "https://thesun.ng/why-kano-govt-spent-n1-5bn-on-mass-wedding-gov-yusuf/",
+          "outlet": "thesun.ng"
+        },
+        {
+          "title": "Kano State to spend N1.5bn on mass wedding for 1,500 couples - Daily Post Nigeria",
+          "url": "https://dailypost.ng/2026/06/15/kano-state-to-spend-n1-5bn-on-mass-wedding-for-1500-couples/",
+          "outlet": "dailypost.ng"
+        },
+        {
+          "title": "Kano mass wedding programme open to Muslims, Christians – Official - Blueprint Newspapers Limited",
+          "url": "https://blueprint.ng/kano-mass-wedding-programme-open-to-muslims-christians-official/",
+          "outlet": "blueprint.ng"
+        },
+        {
+          "title": "Kano mass wedding open to both Muslims, Christians – Official - Tribune Online",
+          "url": "https://tribuneonlineng.com/kano-mass-wedding-open-to-both-muslims-christians-official/",
+          "outlet": "tribuneonlineng.com"
+        },
+        {
+          "title": "Gov Yusuf Approves ₦1.5bn for Mass Wedding of 1,500 Couples – Daily Trust",
+          "url": "https://dailytrust.com/gov-yusuf-approves-%E2%82%A61-5bn-for-mass-wedding-of-1500-couples/",
+          "outlet": "dailytrust.com"
+        },
+        {
+          "title": "Hisbah To Conduct Mass Marriage As Kano Budgets N1.5 Billion – Arise News",
+          "url": "https://www.arise.tv/hisbah-to-conduct-mass-marriage-as-kano-budgets-n1-5-billion/",
+          "outlet": "arise.tv"
+        },
+        {
+          "title": "Kano Budgets N1.5bn for Mass Marriage – THISDAYLIVE",
+          "url": "https://www.thisdaylive.com/2026/06/15/kano-budgets-n1-5bn-for-mass-marriage/",
+          "outlet": "thisdaylive.com"
+        },
+        {
+          "title": "Kano to screen 3,000 couples for mass wedding initiative",
+          "url": "https://punchng.com/kano-to-screen-3000-couples-ahead-of-mass-wedding/",
+          "outlet": "punchng.com"
+        },
+        {
+          "title": "Kano Mass Wedding Open to Muslims, Christians – Official",
+          "url": "https://punchng.com/kano-mass-wedding-open-to-muslims-christians-official/",
+          "outlet": "punchng.com"
+        },
+        {
+          "title": "Kano approves N300m for Hisbah mass wedding scheme - Tribune Online",
+          "url": "https://tribuneonlineng.com/kano-approves-n300m-for-hisbah-mass-wedding-scheme/",
+          "outlet": "tribuneonlineng.com"
+        },
+        {
+          "title": "Hisbah Lays Down Rule, Demands Approval for Divorce After Mass Wedding - Legit.ng",
+          "url": "https://www.legit.ng/nigeria/1714041-mass-wedding-hisbah-lays-law-mandates-approval-divorce/",
+          "outlet": "legit.ng"
+        },
+        {
+          "title": "Kano: Jubilation as Mass Wedding Beneficiaries Get ₦300m Cash - Legit.ng",
+          "url": "https://www.legit.ng/nigeria/1723764-kano-hisbah-n300m-share-mass-wedding-beneficiaries/",
+          "outlet": "legit.ng"
+        },
+        {
+          "title": "Kano Mass Wedding Registration is Free, Hisbah Warns Public",
+          "url": "https://punchng.com/registration-for-kano-mass-wedding-is-free-says-hisbah/",
+          "outlet": "punchng.com"
+        },
+        {
+          "title": "No divorce without our approval, Hisbah warns intending couples in Kano – Daily Trust",
+          "url": "https://dailytrust.com/no-divorce-without-our-approval-hisbah-warns-intending-couples-in-kano/",
+          "outlet": "dailytrust.com"
+        },
+        {
+          "title": "Kano mass wedding",
+          "url": "https://www.the-star.co.ke/news/2026-08-09-nigerias-mass-wedding-and-how-telling-lovers-from-fraudsters-is-proving-tricky",
+          "outlet": "the-star.co.ke"
+        },
+        {
+          "title": "Kano begins screening of couples for mass wedding on Monday - Daily Post Nigeria",
+          "url": "https://dailypost.ng/2026/06/07/kano-begins-screening-of-couples-for-mass-wedding-on-monday/",
+          "outlet": "dailypost.ng"
+        },
+        {
+          "title": "Mass Wedding: ‎Kano Hisbah begins medical screening for 3,000 prospective couples – Daily Trust",
+          "url": "https://dailytrust.com/mass-wedding-kano-hisbah-begins-medical-screening-for-3000-prospective-couples/",
+          "outlet": "dailytrust.com"
+        },
+        {
+          "title": "Northern Governor Releases N1.5bn for Mass Wedding of 3,000 Couples - Legit.ng",
+          "url": "https://www.legit.ng/nigeria/1714732-northern-governor-releases-n15bn-mass-wedding-3000-couples/",
+          "outlet": "legit.ng"
+        },
+        {
+          "title": "Kano approves N1.5bn for mass wedding of 3,000 couples",
+          "url": "https://punchng.com/kano-approves-n1-5bn-for-mass-wedding-of-3000-couples/",
+          "outlet": "punchng.com"
+        },
+        {
+          "title": "New Times Newspaper | Latest Nigeria News, Breaking News, Top News",
+          "url": "https://www.newtimes.com.ng/kano-state-and-mass-weddings/",
+          "outlet": "newtimes.com.ng"
+        },
+        {
+          "title": "Kano State And Mass Weddings, By Hope O’Rukevbe Eghagha",
+          "url": "https://www.nigerdeltatoday.com/kano-state-and-mass-weddings-by-hope-orukevbe-eghagha/",
+          "outlet": "nigerdeltatoday.com"
+        },
+        {
+          "title": "Hisbah Finally Addresses Whether Christians Can Join Kano Mass Wedding - Legit.ng",
+          "url": "https://www.legit.ng/nigeria/1717244-hisbah-finally-addresses-christians-join-kano-mass-wedding/",
+          "outlet": "legit.ng"
+        },
+        {
+          "title": "Kano Screens 720 Couples for State-Sponsored Mass Wedding Programme",
+          "url": "https://www.naijapunchnews.com.ng/2026/06/kano-screens-720-couples-for-state.html",
+          "outlet": "naijapunchnews.com.ng"
+        }
+      ],
+      "via": "article",
+      "confidence": "high"
+    },
+    {
+      "id": "7599f5a5-a388-4d83-aedc-8cc3a04efe79",
+      "title": "Kebbi Governor Vows to Sustain Annual Free Mass Wedding",
+      "summary": "On 2026-07-27, Kebbi State held a mass wedding ceremony in Birnin Kebbi for 300 couples, sponsored by the Hajiya Nafisa Idris Foundation. The governor paid a dowry of ₦200,000 per bride, totaling ₦60,000,000, and provided household items to support the newlyweds.",
+      "state": "Kebbi",
+      "city": "Birnin Kebbi",
+      "location": {
+        "latitude": 12.4539,
+        "longitude": 4.1975,
+        "placeName": "Birnin Kebbi",
+        "state": "Kebbi",
+        "precision": "city"
+      },
+      "date": "2026-07-27",
+      "datePrecision": "day",
+      "year": 2026,
+      "couples": 300,
+      "costNaira": 750000000,
+      "dowryPerBrideNaira": 250000,
+      "sponsor": "Hajiya Nafisa Idris Foundation",
+      "sponsorType": "philanthropist",
+      "beneficiaries": "low-income",
+      "held": true,
+      "edition": "3rd edition",
+      "sources": [
+        {
+          "title": "Kebbi Governor Vows to Sustain Annual Free Mass Wedding",
+          "url": "https://punchng.com/kebbi-gov-vows-to-sustain-annual-free-mass-wedding-scheme/",
+          "outlet": "punchng.com"
+        },
+        {
+          "title": "Kebbi mass wedding",
+          "url": "https://blueprint.ng/idris-issues-eo-declares-kebbi-mass-wedding-annual-event/",
+          "outlet": "blueprint.ng"
+        },
+        {
+          "title": "Nigeria: Community Marriage in Kebbi - A Social Investment Program - allAfrica.com",
+          "url": "https://allafrica.com/stories/202607270492.html",
+          "outlet": "allafrica.com"
+        },
+        {
+          "title": "Community Marriage in Kebbi: A Social Investment Program – THISDAYLIVE",
+          "url": "https://www.thisdaylive.com/2026/07/25/community-marriage-in-kebbi-a-social-investment-program/",
+          "outlet": "thisdaylive.com"
+        },
+        {
+          "title": "Kebbi Mass Wedding: Gov. Idris Reaffirms Commitment to Annual Initiative as 300 Couples Wed - Managarciya",
+          "url": "https://managarciya.com/kebbi-mass-wedding-gov-idris-reaffirms-commitment-to-annual-initiative-as-300-couples-wed/",
+          "outlet": "managarciya.com"
+        },
+        {
+          "title": "Kebbi fixes July 27 for mass wedding of 300 Muslim, Christian couples - Insight Newspaper",
+          "url": "https://www.insightnewsng.com/kebbi-fixes-july-27-for-mass-wedding-of-300-muslim-christian-couples/",
+          "outlet": "insightnewsng.com"
+        },
+        {
+          "title": "Kebbi Govt to conduct mass wedding for 300 Muslim, Christian couples - Arewa Agenda",
+          "url": "https://arewaagenda.com/kebbi-govt-conduct-mass/",
+          "outlet": "arewaagenda.com"
+        },
+        {
+          "title": "300 Kebbi couples tie knot in 3rd mass wedding - Blueprint Newspapers Limited",
+          "url": "https://blueprint.ng/300-kebbi-couples-tie-knot-in-3rd-mass-wedding/",
+          "outlet": "blueprint.ng"
+        },
+        {
+          "title": "Kebbi approves N750m dowries for 300 mass wedding couples",
+          "url": "https://punchng.com/kebbi-approves-n75m-dowries-for-300-mass-wedding-couples/",
+          "outlet": "punchng.com"
+        },
+        {
+          "title": "Kebbi State Govt fixes July 27 for mass wedding | AIT LIVE",
+          "url": "https://ait.live/kebbi-state-govt-fixes-july-27-for-mass-wedding/",
+          "outlet": "ait.live"
+        },
+        {
+          "title": "Kebbi Govt to Sponsor Mass Wedding for 300 Couples, Offers ₦250,000 Dowry to Each Groom",
+          "url": "https://www.amebo9jafeed.com.ng/2026/07/kebbi-govt-to-sponsor-mass-wedding-for.html",
+          "outlet": "amebo9jafeed.com.ng"
+        },
+        {
+          "title": "Kebbi to sponsor mass wedding for 300 couples – Daily Trust",
+          "url": "https://dailytrust.com/kebbi-to-sponsor-mass-wedding-for-300-couples-2/",
+          "outlet": "dailytrust.com"
+        }
+      ],
+      "via": "article",
+      "confidence": "high"
+    },
+    {
+      "id": "904ec149-c529-4757-a0e9-2cf3bfeded79",
+      "title": "Jigawa mass wedding",
+      "summary": "150 couples married in Jigawa State, organised by Jigawa State Government (First Lady).",
+      "state": "Jigawa",
+      "city": "Dutse",
+      "location": {
+        "latitude": 11.7566,
+        "longitude": 9.339,
+        "placeName": "Dutse",
+        "state": "Jigawa",
+        "precision": "city"
+      },
+      "date": "2026-05-18",
+      "datePrecision": "day",
+      "year": 2026,
+      "couples": 150,
+      "costNaira": null,
+      "dowryPerBrideNaira": 100000,
+      "sponsor": "Jigawa State Government (First Lady)",
+      "sponsorType": "state-government",
+      "beneficiaries": "orphans",
+      "held": false,
+      "sources": [
+        {
+          "title": "Jigawa Government to Sponsor Mass Wedding for 150 Orphans - Business News Nigeria",
+          "url": "https://businessnewsng.com/2026/05/18/jigawa-government-to-sponsor-mass-wedding-for-150-orphans/",
+          "outlet": "businessnewsng.com"
+        }
+      ],
+      "via": "article",
+      "confidence": "medium"
+    },
+    {
+      "id": "d30e7f27-a863-48c4-b190-b7c0fc6007b2",
+      "title": "Katsina to hold inaugural mass wedding for 1,000 couples - Blueprint Newspapers Limited",
+      "summary": "Katsina State is set to hold its inaugural mass wedding ceremony on April 25, 2026, for 1,000 couples from across the state, organized by the Al’usra Marital Support Foundation in partnership with the Hisbah Board and the Ministry of Women Affairs.",
+      "state": "Katsina",
+      "location": {
+        "latitude": 12.9908,
+        "longitude": 7.6018,
+        "placeName": "Katsina",
+        "state": "Katsina",
+        "precision": "state"
+      },
+      "date": "2026-04-25",
+      "datePrecision": "day",
+      "year": 2026,
+      "couples": 1000,
+      "costNaira": null,
+      "dowryPerBrideNaira": null,
+      "sponsor": "Katsina State Hisbah Board",
+      "sponsorType": "hisbah",
+      "beneficiaries": "mixed",
+      "held": false,
+      "edition": "inaugural",
+      "sources": [
+        {
+          "title": "Katsina to hold inaugural mass wedding for 1,000 couples - Blueprint Newspapers Limited",
+          "url": "https://blueprint.ng/katsina-to-hold-inaugural-mass-wedding-for-1000-couples/",
+          "outlet": "blueprint.ng"
+        },
+        {
+          "title": "Katsina Government to Conduct Mass Wedding for 1,000 Couples | Matthew Tegha Blog",
+          "url": "https://mathewtegha.com/katsina-government-to-conduct-mass-wedding-for-1000-couples/",
+          "outlet": "mathewtegha.com"
+        },
+        {
+          "title": "Katsina govt to sponsor mass wedding for 1,000 couples - The Telegraph Nigeria",
+          "url": "https://telegraph.ng/news/2026/04/10/katsina-govt-to-sponsor-mass-wedding-for-1000-couples/",
+          "outlet": "telegraph.ng"
+        },
+        {
+          "title": "Katsina to sponsor mass wedding for 1,000 couples – Daily Trust",
+          "url": "https://dailytrust.com/katsina-to-sponsor-mass-wedding-for-1000-couples/",
+          "outlet": "dailytrust.com"
+        },
+        {
+          "title": "Katsina to sponsor mass wedding for 1,000 couples",
+          "url": "https://www.lindaikejisblog.com/2026/4/katsina-to-sponsor-mass-wedding-for-1000-couples.html",
+          "outlet": "lindaikejisblog.com"
+        },
+        {
+          "title": "Katsina plans controversial mass wedding for 1,000 couples | Pulse Nigeria",
+          "url": "https://www.pulse.ng/story/katsina-mass-wedding-1000-couples-controversy-2026041017331301495",
+          "outlet": "pulse.ng"
+        },
+        {
+          "title": "1,000 Couples Receive Guidance Ahead Of Mass Wedding In Katsina - News Agency Of Nigeria",
+          "url": "https://nannews.ng/1000-couples-receive-guidance-ahead-of-mass-wedding-in-katsina/",
+          "outlet": "nannews.ng"
+        }
+      ],
+      "via": "article",
+      "confidence": "high"
+    },
+    {
+      "id": "5dcf4935-a2e0-4604-8dcc-b7439d59dd5e",
+      "title": "Zamfara State sponsors mass wedding for 100 couples",
+      "summary": "Zamfara State Government held a mass wedding on April 22, 2026, for 100 couples from vulnerable groups across the state. Each bride received a dowry of N200,000 and an additional N50,000 to support small businesses in their homes.",
+      "state": "Zamfara",
+      "location": {
+        "latitude": 12.1628,
+        "longitude": 6.6641,
+        "placeName": "Gusau",
+        "state": "Zamfara",
+        "precision": "state"
+      },
+      "date": "2026-04-22",
+      "datePrecision": "day",
+      "year": 2026,
+      "couples": 100,
+      "costNaira": null,
+      "dowryPerBrideNaira": 200000,
+      "sponsor": "Zamfara State Government",
+      "sponsorType": "state-government",
+      "beneficiaries": "mixed",
+      "held": true,
+      "sources": [
+        {
+          "title": "Zamfara State sponsors mass wedding for 100 couples",
+          "url": "https://punchng.com/zamfara-sponsors-mass-wedding-for-100-couples/",
+          "outlet": "punchng.com"
+        }
+      ],
+      "via": "article",
+      "confidence": "medium"
+    },
+    {
+      "id": "20def241-3857-4143-8c17-758028946ab0",
+      "title": "Zamfara Zakat board sponsors 10 PWDs for mass wedding  - Blueprint Newspapers Limited",
+      "summary": "On 2026-03-05, the Zamfara state Zakat and Endowment Board sponsored a mass wedding for 10 persons with disabilities, providing each couple with ₦50,000 cash support and furniture.",
+      "state": "Zamfara",
+      "location": {
+        "latitude": 12.1628,
+        "longitude": 6.6641,
+        "placeName": "Gusau",
+        "state": "Zamfara",
+        "precision": "state"
+      },
+      "date": "2026-03-05",
+      "datePrecision": "day",
+      "year": 2026,
+      "couples": 10,
+      "costNaira": null,
+      "dowryPerBrideNaira": 50000,
+      "sponsor": "Zamfara state Zakat and Endowment Board",
+      "sponsorType": "ngo",
+      "beneficiaries": "disabled",
+      "held": true,
+      "sources": [
+        {
+          "title": "Zamfara Zakat board sponsors 10 PWDs for mass wedding  - Blueprint Newspapers Limited",
+          "url": "https://blueprint.ng/zamfara-zakat-board-sponsors-10-pwds-for-mass-wedding/",
+          "outlet": "blueprint.ng"
+        }
+      ],
+      "via": "article",
+      "confidence": "medium"
+    },
+    {
+      "id": "4b5f787f-0db9-4ea8-a747-b058b04fef15",
+      "title": "Inside the unique Kwara mass wedding festival in Shao",
+      "summary": "The annual mass wedding festival in Shao, Kwara State, held on December 28, 2025, united 60 couples in a collective marriage ceremony honoring the local deity Orisha Awon, preserving the community's cultural heritage.",
+      "state": "Kwara",
+      "city": "Shao",
+      "location": {
+        "latitude": 8.4966,
+        "longitude": 4.5421,
+        "placeName": "Ilorin",
+        "state": "Kwara",
+        "precision": "state"
+      },
+      "date": "2025-12-28",
+      "datePrecision": "day",
+      "year": 2025,
+      "couples": 60,
+      "costNaira": null,
+      "dowryPerBrideNaira": null,
+      "sponsor": "Kwara State Government",
+      "sponsorType": "unknown",
+      "beneficiaries": "mixed",
+      "held": true,
+      "sources": [
+        {
+          "title": "Inside the unique Kwara mass wedding festival in Shao",
+          "url": "https://punchng.com/inside-kwara-community-where-60-maidens-wed-in-one-day/",
+          "outlet": "punchng.com"
+        }
+      ],
+      "via": "article",
+      "confidence": "medium"
+    },
+    {
+      "id": "344a3c70-565b-44b8-a34f-81596d8bb215",
+      "title": "Zamfara first lady supervises state-sponsored mass wedding of 200 female orphans, widows",
+      "summary": "On 2025-11-24 in Gusau, Zamfara State, the Zakkat and Endowment Board sponsored a mass wedding for 200 female orphans and widows, providing each bride with a dowry of ₦200,000 and additional household items.",
+      "state": "Zamfara",
+      "city": "Gusau",
+      "location": {
+        "latitude": 12.1628,
+        "longitude": 6.6641,
+        "placeName": "Gusau",
+        "state": "Zamfara",
+        "precision": "city"
+      },
+      "date": "2025-11-24",
+      "datePrecision": "day",
+      "year": 2025,
+      "couples": 200,
+      "costNaira": null,
+      "dowryPerBrideNaira": 200000,
+      "sponsor": "Zakkat and Endowment Board, Zamfara State",
+      "sponsorType": "state-government",
+      "beneficiaries": "orphans",
+      "held": true,
+      "sources": [
+        {
+          "title": "Zamfara first lady supervises state-sponsored mass wedding of 200 female orphans, widows",
+          "url": "https://gazettengr.com/zamfara-first-lady-supervises-state-sponsored-mass-wedding-of-200-female-orphans-widows/",
+          "outlet": "gazettengr.com"
+        },
+        {
+          "title": "\"Why I prefer marriage to school\": 17-year-old bride speaks as Zamfara govt sponsors 200 weddings",
+          "url": "https://www.premiumtimesng.com/news/top-news/838628-why-i-prefer-marriage-to-school-17-year-old-bride-speaks-as-zamfara-govt-sponsors-200-weddings.html",
+          "outlet": "premiumtimesng.com"
+        },
+        {
+          "title": "Zamfara sponsors mass wedding for 200 orphans and widows",
+          "url": "https://punchng.com/pictorial-zamfara-sponsors-mass-wedding-for-200-orphans-widows-others/",
+          "outlet": "punchng.com"
+        },
+        {
+          "title": "Zamfara zakkat officiates mass weddings for 200 orphans, widows, others - Tribune Online",
+          "url": "https://tribuneonlineng.com/zamfara-zakkat-officiates-mass-weddings-for-200-orphans-widows-others/",
+          "outlet": "tribuneonlineng.com"
+        },
+        {
+          "title": "Zamfara Set For Mass Wedding Of 200 Orphans | The Source",
+          "url": "https://thesourceng.com/zamfara-set-for-mass-wedding-of-200-orphans/",
+          "outlet": "thesourceng.com"
+        },
+        {
+          "title": "Zamfara govt to conduct mass wedding, empower 400 orphans",
+          "url": "https://gazettengr.com/zamfara-govt-to-conduct-mass-wedding-empower-400-orphans/",
+          "outlet": "gazettengr.com"
+        }
+      ],
+      "via": "article",
+      "confidence": "high"
+    },
+    {
+      "id": "42495232-b321-4f44-8a40-bd78aa4bdf3c",
+      "title": "Kebbi Govt.Sponsors 300 Couples In Mass Wedding | AIT LIVE",
+      "summary": "Kebbi State Government sponsored a mass wedding for 300 couples on 2025-02-28, paying a dowry of N180,000 per couple and providing household items. The event was presided over by the Kebbi State Governor and involved the Emir of Gwandu and other dignitaries.",
+      "state": "Kebbi",
+      "city": "Birnin Kebbi",
+      "location": {
+        "latitude": 12.4539,
+        "longitude": 4.1975,
+        "placeName": "Birnin Kebbi",
+        "state": "Kebbi",
+        "precision": "city"
+      },
+      "date": "2025-02-28",
+      "datePrecision": "day",
+      "year": 2025,
+      "couples": 300,
+      "costNaira": 540000000,
+      "dowryPerBrideNaira": 180000,
+      "sponsor": "Kebbi State Government",
+      "sponsorType": "state-government",
+      "beneficiaries": "mixed",
+      "held": true,
+      "edition": "2nd mass wedding",
+      "sources": [
+        {
+          "title": "Kebbi Govt.Sponsors 300 Couples In Mass Wedding | AIT LIVE",
+          "url": "https://ait.live/kebbi-govt-sponsors-300-couples-in-mass-wedding/",
+          "outlet": "ait.live"
+        },
+        {
+          "title": "Kebbi gov Idris joins 300 couples as husbands, wives in mass wedding  - Blueprint Newspapers Limited",
+          "url": "https://blueprint.ng/kebbi-gov-idris-joins-300-couples-as-husbands-wives-in-mass-wedding/",
+          "outlet": "blueprint.ng"
+        },
+        {
+          "title": "Mass Wedding: Kebbi pays N54m dowry for 300 couples - Punch Newspapers",
+          "url": "https://punchng.com/mass-wedding-kebbi-pays-n54m-dowry-for-300-couples/",
+          "outlet": "punchng.com"
+        },
+        {
+          "title": "Idris conducts mass wedding for 300 couples in Kebbi  - Blueprint Newspapers Limited",
+          "url": "https://blueprint.ng/idris-conducts-mass-wedding-for-300-couples-in-kebbi/",
+          "outlet": "blueprint.ng"
+        },
+        {
+          "title": "Kebbi stages mass wedding for 300 couples - Tribune Online",
+          "url": "https://tribuneonlineng.com/kebbi-stages-mass-wedding-for-300-couples/",
+          "outlet": "tribuneonlineng.com"
+        },
+        {
+          "title": "Kebbi Govt Conducts Mass Wedding For 300 Couples – The Whistler Newspaper",
+          "url": "https://thewhistler.ng/kebbi-govt-conducts-mass-wedding-for-300-couples/",
+          "outlet": "thewhistler.ng"
+        },
+        {
+          "title": "Kebbi govt to spend N540m on mass wedding for 300 couples - Daily Post Nigeria",
+          "url": "https://dailypost.ng/2025/02/10/kebbi-govt-to-spend-n540m-on-mass-wedding-for-300-couples/",
+          "outlet": "dailypost.ng"
+        },
+        {
+          "title": "Mass wedding: Kebbi approves N54m for 300 couples’ dowry – Daily Trust",
+          "url": "https://dailytrust.com/mass-wedding-kebbi-approves-n54m-for-300-couples-dowry/",
+          "outlet": "dailytrust.com"
+        },
+        {
+          "title": "Mass wedding: Kebbi State Government releases N54 million | AIT LIVE",
+          "url": "https://ait.live/mass-wedding-kebbi-state-government-releases-n54-million/",
+          "outlet": "ait.live"
+        },
+        {
+          "title": "Mass wedding: Kebbi State Govt approves N54m for 300 couples’ dowry",
+          "url": "https://www.lindaikejisblog.com/2025/2/mass-wedding-kebbi-state-govt-approves-n54m-for-300-couples-dowry.html",
+          "outlet": "lindaikejisblog.com"
+        },
+        {
+          "title": "Mass wedding: Kebbi approves ₦54m for 300 couples' dowry",
+          "url": "https://punchng.com/mass-wedding-kebbi-approves-%E2%82%A654m-for-300-couples-dowry/",
+          "outlet": "punchng.com"
+        },
+        {
+          "title": "Kebbi earmarks N54m dowry for 300 couples’ mass wedding - Blueprint Newspapers Limited",
+          "url": "https://blueprint.ng/kebbi-earmarks-n54m-dowry-for-300-couples-mass-wedding/",
+          "outlet": "blueprint.ng"
+        },
+        {
+          "title": "Kebbi Govt. to Sponsor Mass Wedding for 600 Couples - MegaIcon Magazine",
+          "url": "https://megaiconmagazine.com/kebbi-govt-to-sponsor-mass-wedding-for-600-couples/",
+          "outlet": "megaiconmagazine.com"
+        },
+        {
+          "title": "Kebbi Government to Fund Mass Wedding for 600 Persons - Latest Breaking News - News Central TV",
+          "url": "https://newscentral.africa/kebbi-government-to-fund-mass-wedding-for-600-persons/",
+          "outlet": "newscentral.africa"
+        },
+        {
+          "title": "Kebbi mass wedding",
+          "url": "https://newscentral.africa/kebbi-sponsors-300-weddings-covers-n54-million-dowries/",
+          "outlet": "newscentral.africa"
+        }
+      ],
+      "via": "article",
+      "confidence": "high"
+    },
+    {
+      "id": "5772ad10-ea6c-48d4-9010-567f920a8f6f",
+      "title": "Catholic Bishop conducts mass wedding for 21 couples in Niger - Daily Post Nigeria",
+      "summary": "The Catholic Bishop of Kontagora Diocese conducted a mass wedding for 21 couples at St. Mark Catholic Church in Nsanji Nkoso, Niger State on 2025-02-15. The couples had completed traditional rites and counseling before the church ceremony.",
+      "state": "Niger",
+      "city": "Nsanji Nkoso",
+      "location": {
+        "latitude": 9.6139,
+        "longitude": 6.5569,
+        "placeName": "Minna",
+        "state": "Niger",
+        "precision": "state"
+      },
+      "date": "2025-02-15",
+      "datePrecision": "day",
+      "year": 2025,
+      "couples": 21,
+      "costNaira": null,
+      "dowryPerBrideNaira": null,
+      "sponsor": "Catholic Bishop of Kontagora Diocese",
+      "sponsorType": "religious-body",
+      "beneficiaries": "mixed",
+      "held": true,
+      "sources": [
+        {
+          "title": "Catholic Bishop conducts mass wedding for 21 couples in Niger - Daily Post Nigeria",
+          "url": "https://dailypost.ng/2025/02/16/catholic-bishop-conducts-mass-wedding-for-21-couples-in-niger/",
+          "outlet": "dailypost.ng"
+        },
+        {
+          "title": "Catholic Bishop conducts mass wedding for 21 couples in Niger",
+          "url": "https://tribuneonlineng.com/catholic-bishop-conducts-mass-wedding-for-21-couples-in-niger/",
+          "outlet": "tribuneonlineng.com"
+        }
+      ],
+      "via": "article",
+      "confidence": "high"
+    },
+    {
+      "id": "4dea0e76-6781-426b-bac4-bdbce22295f3",
+      "title": "NIGERIA DAILY: The Dust Raised By Kano State’s ₦2.5b Mass Wedding – Daily Trust",
+      "summary": "Kano State held an annual mass wedding ceremony in 2025 funded with ₦2.5 billion by the Kano Government, sparking public debate about its social and economic impact.",
+      "state": "Kano",
+      "location": {
+        "latitude": 12.0022,
+        "longitude": 8.592,
+        "placeName": "Kano",
+        "state": "Kano",
+        "precision": "state"
+      },
+      "date": "2025-01-01",
+      "datePrecision": "year",
+      "year": 2025,
+      "couples": 2000,
+      "costNaira": 2500000000,
+      "dowryPerBrideNaira": null,
+      "sponsor": "Kano Government",
+      "sponsorType": "state-government",
+      "beneficiaries": "mixed",
+      "held": true,
+      "sources": [
+        {
+          "title": "NIGERIA DAILY: The Dust Raised By Kano State’s ₦2.5b Mass Wedding – Daily Trust",
+          "url": "https://dailytrust.com/nigeria-daily-the-dust-raised-by-kano-states-%E2%82%A62-5b-mass-wedding/",
+          "outlet": "dailytrust.com"
+        },
+        {
+          "title": "CSOs fault Kano government over N1.06bn mass wedding plan - Daily Post Nigeria",
+          "url": "https://dailypost.ng/2025/10/11/csos-fault-kano-government-over-n1-06bn-mass-wedding-plan/",
+          "outlet": "dailypost.ng"
+        },
+        {
+          "title": "Hisbah arrests couple, three others over illegal marriage in Kano - Daily Post Nigeria",
+          "url": "https://dailypost.ng/2025/10/13/hisbah-arrests-couple-three-others-over-illegal-marriage-in-kano/",
+          "outlet": "dailypost.ng"
+        },
+        {
+          "title": "Kano govt set to organise mass wedding for 2,000 couples - Tribune Online",
+          "url": "https://tribuneonlineng.com/kano-govt-set-to-organise-mass-wedding-for-2000-couples/",
+          "outlet": "tribuneonlineng.com"
+        },
+        {
+          "title": "Kano: Who needs mass wedding in 2025? - Tribune Online",
+          "url": "https://tribuneonlineng.com/kano-who-needs-mass-wedding-in-2025/",
+          "outlet": "tribuneonlineng.com"
+        }
+      ],
+      "via": "article",
+      "confidence": "high"
+    },
+    {
+      "id": "c992e8a3-d446-428a-a8df-b58afcab00d8",
+      "title": "Yobe captures mass weddings in 2025 budget - Daily Post Nigeria",
+      "summary": "Yobe State Government announced plans to organize mass weddings in 2025 as part of its budget for youth and women empowerment programs aimed at poverty alleviation.",
+      "state": "Yobe",
+      "location": {
+        "latitude": 11.7479,
+        "longitude": 11.9608,
+        "placeName": "Damaturu",
+        "state": "Yobe",
+        "precision": "state"
+      },
+      "date": "2025-01-01",
+      "datePrecision": "year",
+      "year": 2025,
+      "couples": null,
+      "costNaira": null,
+      "dowryPerBrideNaira": null,
+      "sponsor": "Yobe State Government",
+      "sponsorType": "state-government",
+      "beneficiaries": "mixed",
+      "held": false,
+      "sources": [
+        {
+          "title": "Yobe captures mass weddings in 2025 budget - Daily Post Nigeria",
+          "url": "https://dailypost.ng/2024/11/06/yobe-captures-mass-weddings-in-2025-budget/",
+          "outlet": "dailypost.ng"
+        }
+      ],
+      "via": "article",
+      "confidence": "low"
+    },
+    {
+      "id": "2f57e9d3-8b44-4e2b-bbf5-fd2d2941b4a9",
+      "title": "N2.5bn Kano mass wedding sparks debate on cultural preservation, misplaced priority",
+      "summary": "In December 2024, Kano State Government held a mass wedding ceremony for 1,800 couples, spending N2.5 billion. Each bride received N50,000 as dowry. The programme supports low-income brides, widows, and divorcees and includes medical screening by the Hisbah board.",
+      "state": "Kano",
+      "location": {
+        "latitude": 12.0022,
+        "longitude": 8.592,
+        "placeName": "Kano",
+        "state": "Kano",
+        "precision": "state"
+      },
+      "date": "2024-12-01",
+      "datePrecision": "month",
+      "year": 2024,
+      "couples": 1800,
+      "costNaira": 2500000000,
+      "dowryPerBrideNaira": 50000,
+      "sponsor": "Kano State Government",
+      "sponsorType": "state-government",
+      "beneficiaries": "mixed",
+      "held": true,
+      "sources": [
+        {
+          "title": "N2.5bn Kano mass wedding sparks debate on cultural preservation, misplaced priority",
+          "url": "https://punchng.com/n2-5bn-kano-mass-wedding-sparks-debate-on-cultural-preservation-misplaced-priority/",
+          "outlet": "punchng.com"
+        }
+      ],
+      "via": "article",
+      "confidence": "medium"
+    },
+    {
+      "id": "bab17398-c82b-4153-9cc3-0df0ed5ab72e",
+      "title": "Zamfara Rep sponsors mass wedding of 105 orphan brides; each couple gets ₦150k | Pulse Nigeria",
+      "summary": "On 2024-07-06 in Bungudu, Zamfara, Rep. Abdulmalik Zubairu sponsored a mass wedding for 105 orphan brides, each bride receiving a dowry of ₦100,000. The event supported daughters of deceased victims of banditry in his constituency.",
+      "state": "Zamfara",
+      "city": "Bungudu",
+      "location": {
+        "latitude": 12.1628,
+        "longitude": 6.6641,
+        "placeName": "Gusau",
+        "state": "Zamfara",
+        "precision": "state"
+      },
+      "date": "2024-07-06",
+      "datePrecision": "day",
+      "year": 2024,
+      "couples": 105,
+      "costNaira": 17000000,
+      "dowryPerBrideNaira": 100000,
+      "sponsor": "Rep. Abdulmalik Zubairu",
+      "sponsorType": "federal",
+      "beneficiaries": "orphans",
+      "held": true,
+      "sources": [
+        {
+          "title": "Zamfara Rep sponsors mass wedding of 105 orphan brides; each couple gets ₦150k | Pulse Nigeria",
+          "url": "https://www.pulse.ng/news/local/zamfara-rep-sponsors-mass-wedding-of-105-orphans-each-couple-gets-naira150k/vdyzf44",
+          "outlet": "pulse.ng"
+        },
+        {
+          "title": "Zamfara Hisbah Commission conducts mass wedding for 100 couples - Daily Post Nigeria",
+          "url": "https://dailypost.ng/2024/12/12/zamfara-hisbah-commission-conducts-mass-wedding-for-100-couples",
+          "outlet": "dailypost.ng"
+        }
+      ],
+      "via": "article",
+      "confidence": "high"
+    },
+    {
+      "id": "785b9167-bdb7-4b9a-b6ba-05611d28813c",
+      "title": "On mass weddings and matters arising - Blueprint Newspapers Limited",
+      "summary": "On May 25, 2024, a mass wedding was held in Niger State where 100 orphaned girls were married in a ceremony arranged by the Niger State House of Assembly as part of constituency projects, despite initial legal opposition from the Minister of Women Affairs.",
+      "state": "Niger",
+      "location": {
+        "latitude": 9.6139,
+        "longitude": 6.5569,
+        "placeName": "Minna",
+        "state": "Niger",
+        "precision": "state"
+      },
+      "date": "2024-05-25",
+      "datePrecision": "day",
+      "year": 2024,
+      "couples": 100,
+      "costNaira": null,
+      "dowryPerBrideNaira": null,
+      "sponsor": "Niger State House of Assembly",
+      "sponsorType": "state-government",
+      "beneficiaries": "orphans",
+      "held": true,
+      "sources": [
+        {
+          "title": "On mass weddings and matters arising - Blueprint Newspapers Limited",
+          "url": "https://blueprint.ng/on-mass-weddings-and-matters-arising/",
+          "outlet": "blueprint.ng"
+        },
+        {
+          "title": "Niger’s mass wedding and societal stability – Daily Trust",
+          "url": "https://dailytrust.com/nigers-mass-wedding-and-societal-stability/",
+          "outlet": "dailytrust.com"
+        },
+        {
+          "title": "Nigeria mass wedding for 100 orphans sparks outcry",
+          "url": "https://www.bbc.com/news/articles/c3gqvzql9ylo",
+          "outlet": "bbc.com"
+        },
+        {
+          "title": "Mass Wedding Controversy in Nigeria - The NEWS",
+          "url": "https://thenewsnigeria.com.ng/2024/05/22/mass-wedding-controversy-in-nigeria/",
+          "outlet": "thenewsnigeria.com.ng"
+        },
+        {
+          "title": "Women This Week: Activists End Effort to Carry out Mass Wedding Involving Child Brides in Nigeria | Council on Foreign Relations",
+          "url": "https://www.cfr.org/articles/women-week-activists-end-effort-carry-out-mass-wedding-involving-child-brides-nigeria",
+          "outlet": "cfr.org"
+        }
+      ],
+      "via": "article",
+      "confidence": "high"
+    },
+    {
+      "id": "e9bb6b0b-9621-4d14-bf09-56de6415805c",
+      "title": "Nigeria: Kebbi Holds Maiden Mass Wedding for Over 300 Couples - allAfrica.com",
+      "summary": "Kebbi state government held its maiden mass wedding on 2024-01-29 in Birnin Kebbi, marrying over 300 couples including divorcees, widows, and indigents, organised through Nafisa Nasir Development Foundation (NANAS).",
+      "state": "Kebbi",
+      "city": "Birnin Kebbi",
+      "location": {
+        "latitude": 12.4539,
+        "longitude": 4.1975,
+        "placeName": "Birnin Kebbi",
+        "state": "Kebbi",
+        "precision": "city"
+      },
+      "date": "2024-01-29",
+      "datePrecision": "day",
+      "year": 2024,
+      "couples": 300,
+      "costNaira": 21000000,
+      "dowryPerBrideNaira": 70000,
+      "sponsor": "Nafisa Nasir Development Foundation (NANAS) under Kebbi state government",
+      "sponsorType": "state-government",
+      "beneficiaries": "mixed",
+      "held": true,
+      "edition": "maiden edition",
+      "sources": [
+        {
+          "title": "Nigeria: Kebbi Holds Maiden Mass Wedding for Over 300 Couples - allAfrica.com",
+          "url": "https://allafrica.com/stories/202401290331.html",
+          "outlet": "allafrica.com"
+        },
+        {
+          "title": "Nigerians knock Kebbi govt for sponsoring mass wedding with N21m - Tribune Online",
+          "url": "https://tribuneonlineng.com/nigerians-knock-kebbi-govt-for-sponsoring-mass-wedding-with-n21m/",
+          "outlet": "tribuneonlineng.com"
+        },
+        {
+          "title": "Kebbi State Govt organises mass weddings for over 300 divorcees, widows - Daily Post Nigeria",
+          "url": "https://dailypost.ng/2024/01/28/kebbi-state-govt-organises-mass-weddings-for-over-300-divorcees-widows/",
+          "outlet": "dailypost.ng"
+        },
+        {
+          "title": "Kebbi: Gov Idris weds 300 First Lady Nafisa-initiated couples  - Blueprint Newspapers Limited",
+          "url": "https://blueprint.ng/kebbi-gov-idris-weds-300-first-lady-nafisa-initiated-couples/",
+          "outlet": "blueprint.ng"
+        }
+      ],
+      "via": "article",
+      "confidence": "high"
+    },
+    {
+      "id": "a5d82974-36a3-4b80-8b04-0bb305989ae7",
+      "title": "Borno mass wedding",
+      "summary": "180 couples married in Borno State, organised by Muktar Aliyu Betara.",
+      "state": "Borno",
+      "location": {
+        "latitude": 11.8311,
+        "longitude": 13.151,
+        "placeName": "Maiduguri",
+        "state": "Borno",
+        "precision": "state"
+      },
+      "date": "2024-01-01",
+      "datePrecision": "month",
+      "year": 2024,
+      "couples": 180,
+      "costNaira": null,
+      "dowryPerBrideNaira": null,
+      "sponsor": "Muktar Aliyu Betara",
+      "sponsorType": "unknown",
+      "beneficiaries": "unknown",
+      "held": true,
+      "sources": [
+        {
+          "title": "Borno mass wedding",
+          "url": "https://www.france24.com/en/live-news/20240516-nigeria-lawmaker-s-plan-for-mass-wedding-of-orphans-sparks-uproar",
+          "outlet": "france24.com"
+        }
+      ],
+      "via": "roundup",
+      "confidence": "medium"
+    },
+    {
+      "id": "3a94f3b2-64fc-45c4-b1b8-e6374de4bb5d",
+      "title": "Mass wedding: Catholic bishop joins 30 couples in holy matrimony in Niger - Daily Post Nigeria",
+      "summary": "The Catholic Bishop of Kontagora Diocese conducted a mass wedding for 30 couples at St. Joseph Catholic Church in Agwarra, Niger State on 2023-11-19. The couples had completed traditional rites and three months of marriage counselling before being joined in holy matrimony.",
+      "state": "Niger",
+      "city": "Agwarra",
+      "location": {
+        "latitude": 9.6139,
+        "longitude": 6.5569,
+        "placeName": "Minna",
+        "state": "Niger",
+        "precision": "state"
+      },
+      "date": "2023-11-19",
+      "datePrecision": "day",
+      "year": 2023,
+      "couples": 30,
+      "costNaira": null,
+      "dowryPerBrideNaira": null,
+      "sponsor": "Catholic Diocese of Kontagora",
+      "sponsorType": "religious-body",
+      "beneficiaries": "mixed",
+      "held": true,
+      "sources": [
+        {
+          "title": "Mass wedding: Catholic bishop joins 30 couples in holy matrimony in Niger - Daily Post Nigeria",
+          "url": "https://dailypost.ng/2023/11/19/mass-wedding-catholic-bishop-joins-30-couples-in-holy-matrimony-in-niger/",
+          "outlet": "dailypost.ng"
+        },
+        {
+          "title": "Niger: Catholic Bishop conduct mass wedding for 30 couples",
+          "url": "https://tribuneonlineng.com/niger-catholic-bishop-conduct-mass-wedding-for-30-couples/",
+          "outlet": "tribuneonlineng.com"
+        }
+      ],
+      "via": "article",
+      "confidence": "high"
+    },
+    {
+      "id": "ed8f3500-5f1a-4ab5-a300-75ca15da3d22",
+      "title": "Mass Wedding: Photos Emerge As Kano Government Gifts 1800 Couples Bed, Food, Clothes - Legit.ng",
+      "summary": "The Kano State Government held a mass wedding on 2023-10-14 for 1800 couples, mostly widows and divorcees, providing dowry of 50000 naira per bride and gifts including beds, food, and clothes. The event was funded with a budget of 854000000 naira.",
+      "state": "Kano",
+      "location": {
+        "latitude": 12.0022,
+        "longitude": 8.592,
+        "placeName": "Kano",
+        "state": "Kano",
+        "precision": "city"
+      },
+      "date": "2023-10-14",
+      "datePrecision": "day",
+      "year": 2023,
+      "couples": 1800,
+      "costNaira": 854000000,
+      "dowryPerBrideNaira": 20000,
+      "sponsor": "Kano State Government",
+      "sponsorType": "state-government",
+      "beneficiaries": "mixed",
+      "held": true,
+      "edition": "first phase of the Auren Zaurawa Mass Wedding Initiative",
+      "sources": [
+        {
+          "title": "Mass Wedding: Photos Emerge As Kano Government Gifts 1800 Couples Bed, Food, Clothes - Legit.ng",
+          "url": "https://www.legit.ng/politics/1558617-mass-wedding-photos-emerge-kano-government-gifts-1800-couples-bed-food-clothes/",
+          "outlet": "legit.ng"
+        },
+        {
+          "title": "Kano conducts mass wedding for 1, 800 couples",
+          "url": "https://punchng.com/kano-conducts-mass-wedding-for-1-800-couples/",
+          "outlet": "punchng.com"
+        },
+        {
+          "title": "Kano Mass Wedding: Jubilation as Kwankwaso, Governor Yusuf Wed 1,700 Couples - Legit.ng",
+          "url": "https://www.legit.ng/nigeria/1558493-kano-mass-wedding-jubilation-kwankwaso-governor-yusuf-1700-couples/",
+          "outlet": "legit.ng"
+        },
+        {
+          "title": "1,500 couples tie the knot during a mass wedding in Nigeria's Kano state | AP News",
+          "url": "https://apnews.com/video/1500-couples-tie-the-knot-during-a-mass-wedding-in-nigerias-kano-state-a8a13aab3c1a4e5aa79f9b35d6f8716e",
+          "outlet": "apnews.com"
+        },
+        {
+          "title": "Beneficiaries of Kano mass weddings speak 17 months after – Daily Trust",
+          "url": "https://dailytrust.com/beneficiaries-of-kano-mass-weddings-speak-17-months-after/",
+          "outlet": "dailytrust.com"
+        },
+        {
+          "title": "Mass Weddings: Charity or Capital? Assessing the Real Social and Economic Impact |",
+          "url": "https://thenews-chronicle.com/mass-weddings-charity-or-capital-assessing-the-real-social-and-economic-impact/",
+          "outlet": "thenews-chronicle.com"
+        },
+        {
+          "title": "Kano to sponsor mass wedding for 1,800 couples with ₦800m",
+          "url": "https://punchng.com/kano-to-sponsor-mass-wedding-for-1800-couples-with-%E2%82%A6800m/",
+          "outlet": "punchng.com"
+        },
+        {
+          "title": "Over 4, 000 registered for Kano mass wedding – Daily Trust",
+          "url": "https://dailytrust.com/over-4-000-registered-for-kano-mass-wedding/",
+          "outlet": "dailytrust.com"
+        },
+        {
+          "title": "Over 4000 apply for mass wedding in Kano - Blueprint Newspapers Limited",
+          "url": "https://blueprint.ng/over-4000-apply-for-mass-wedding-in-kano/",
+          "outlet": "blueprint.ng"
+        },
+        {
+          "title": "Reactions trail Kano govt’s N854m mass wedding – Daily Trust",
+          "url": "https://dailytrust.com/reactions-trail-kano-govts-n854m-mass-wedding/",
+          "outlet": "dailytrust.com"
+        },
+        {
+          "title": "Kano State Government Hosts Mass Wedding for 3,600 Couples - The StentorNews",
+          "url": "https://thestentornews.com/2023/10/13/kano-state-government-hosts-mass-wedding-for-3600-couples/",
+          "outlet": "thestentornews.com"
+        },
+        {
+          "title": "Kano govt conducts mass wedding for 3600 couples - Tribune Online",
+          "url": "https://tribuneonlineng.com/kano-conducts-mass-wedding-for-3600-couples/",
+          "outlet": "tribuneonlineng.com"
+        },
+        {
+          "title": "Kano Govt weds 3,600 in colourful ceremony - Daily Post Nigeria",
+          "url": "https://dailypost.ng/2023/10/13/kano-govt-weds-3600-in-colourful-ceremony/",
+          "outlet": "dailypost.ng"
+        },
+        {
+          "title": "Prominent Emir Urges Families to Reduce Lavish Wedding Spending - Legit.ng",
+          "url": "https://www.legit.ng/nigeria/1716896-zazzau-emir-urges-families-reduce-lavish-wedding-spending/",
+          "outlet": "legit.ng"
+        }
+      ],
+      "via": "article",
+      "confidence": "high",
+      "city": "Kano"
+    },
+    {
+      "id": "b3f505bf-74bf-4c18-b732-2a9b5fbec1bc",
+      "title": "Kwara mass wedding",
+      "summary": "36 couples married in Kwara State, organised by Kwara State Government.",
+      "state": "Kwara",
+      "city": "Shao",
+      "location": {
+        "latitude": 8.4966,
+        "longitude": 4.5421,
+        "placeName": "Ilorin",
+        "state": "Kwara",
+        "precision": "state"
+      },
+      "date": "2023-10-01",
+      "datePrecision": "month",
+      "year": 2023,
+      "couples": 36,
+      "costNaira": null,
+      "dowryPerBrideNaira": null,
+      "sponsor": "Kwara State Government",
+      "sponsorType": "state-government",
+      "beneficiaries": "unknown",
+      "held": true,
+      "sources": [
+        {
+          "title": "Kwara mass wedding",
+          "url": "https://www.pulse.ng/news/local/mass-wedding-organised-to-promote-unity-kwara-traditional-ruler-2024072619445166850",
+          "outlet": "pulse.ng"
+        }
+      ],
+      "via": "roundup",
+      "confidence": "medium"
+    },
+    {
+      "id": "1e38de82-310e-4f50-bbc1-b4fb641d339d",
+      "title": "Top Northern Governor to Sponsor Mass Wedding with N854m, Details Emerge - Legit.ng",
+      "summary": "The Kano State Government approved N854 million on 2023-08-23 to sponsor the first phase of the Auren Zaurawa Mass Wedding Initiative for 1,020 vulnerable couples across the state. The ceremony has not yet taken place.",
+      "state": "Kano",
+      "location": {
+        "latitude": 12.0022,
+        "longitude": 8.592,
+        "placeName": "Kano",
+        "state": "Kano",
+        "precision": "state"
+      },
+      "date": "2023-08-23",
+      "datePrecision": "day",
+      "year": 2023,
+      "couples": 1020,
+      "costNaira": 854000000,
+      "dowryPerBrideNaira": null,
+      "sponsor": "Kano State Government",
+      "sponsorType": "state-government",
+      "beneficiaries": "low-income",
+      "held": false,
+      "edition": "first phase of the Auren Zaurawa Mass Wedding Initiative",
+      "sources": [
+        {
+          "title": "Top Northern Governor to Sponsor Mass Wedding with N854m, Details Emerge - Legit.ng",
+          "url": "https://www.legit.ng/nigeria/1550688-kano-government-sponsor-mass-wedding-n854-million/",
+          "outlet": "legit.ng"
+        }
+      ],
+      "via": "article",
+      "confidence": "medium"
+    },
+    {
+      "id": "4bc49579-b5d9-4a85-947e-821db9c4fc24",
+      "title": "Kebbi Govt to conduct mass wedding for 300 Muslim, Christian couples — Daily Nigerian",
+      "summary": "The Kebbi Government and Nafisa Nasir Charity Development Foundation planned an Inclusive Mass Wedding for 300 Muslim and Christian couples on July 27.",
+      "state": "Kebbi",
+      "location": {
+        "latitude": 12.4539,
+        "longitude": 4.1975,
+        "placeName": "Birnin Kebbi",
+        "state": "Kebbi",
+        "precision": "state"
+      },
+      "date": "2023-07-27",
+      "datePrecision": "day",
+      "year": 2023,
+      "couples": 300,
+      "costNaira": null,
+      "dowryPerBrideNaira": null,
+      "sponsor": "Kebbi Government in collaboration with Nafisa Nasir Charity Development Foundation",
+      "sponsorType": "state-government",
+      "beneficiaries": "mixed",
+      "held": false,
+      "sources": [
+        {
+          "title": "Kebbi Govt to conduct mass wedding for 300 Muslim, Christian couples — Daily Nigerian",
+          "url": "https://dailynigerian.com/kebbi-govt-to-conduct-mass-wedding-for-300-muslim-christian-couples/",
+          "outlet": "dailynigerian.com"
+        }
+      ],
+      "via": "article",
+      "confidence": "medium"
+    },
+    {
+      "id": "6c8b986e-28d2-4741-b64d-71db4a0c3273",
+      "title": "Nigerian activists condemn mass ‘forced marriages’ of 100 girls and young women | Nigeria | The Guardian",
+      "summary": "A planned mass wedding ceremony in Niger state for 100 orphaned girls and young women, scheduled for 24 May 2023, has been met with criticism and legal challenges over concerns of forced and underage marriages.",
+      "state": "Niger",
+      "location": {
+        "latitude": 9.6139,
+        "longitude": 6.5569,
+        "placeName": "Minna",
+        "state": "Niger",
+        "precision": "state"
+      },
+      "date": "2023-05-24",
+      "datePrecision": "day",
+      "year": 2023,
+      "couples": 100,
+      "costNaira": null,
+      "dowryPerBrideNaira": null,
+      "sponsor": "Abdulmalik Sarkindaji, speaker of the national assembly in Niger state",
+      "sponsorType": "state-government",
+      "beneficiaries": "orphans",
+      "held": false,
+      "sources": [
+        {
+          "title": "Nigerian activists condemn mass ‘forced marriages’ of 100 girls and young women | Nigeria | The Guardian",
+          "url": "https://www.theguardian.com/world/article/2024/may/16/nigeria-activists-mass-forced-marriage-girls-young-women",
+          "outlet": "theguardian.com"
+        }
+      ],
+      "via": "article",
+      "confidence": "medium"
+    },
+    {
+      "id": "5a7a7626-5b07-42a2-a2b6-c67e0ebcb383",
+      "title": "Bauchi mass wedding",
+      "summary": "2 couples married in Bauchi State, organised by Bauchi State Hisbah Department of Shariah Commission.",
+      "state": "Bauchi",
+      "city": "Bauchi",
+      "location": {
+        "latitude": 10.3158,
+        "longitude": 9.8442,
+        "placeName": "Bauchi",
+        "state": "Bauchi",
+        "precision": "city"
+      },
+      "date": "2022-02-21",
+      "datePrecision": "day",
+      "year": 2022,
+      "couples": null,
+      "costNaira": 50000,
+      "dowryPerBrideNaira": null,
+      "sponsor": "Bauchi State Hisbah Department of Shariah Commission",
+      "sponsorType": "hisbah",
+      "beneficiaries": "unknown",
+      "held": true,
+      "sources": [
+        {
+          "title": "Bauchi mass wedding",
+          "url": "https://www.punchng.com/pictorial-bauchi-hisbah-weds-two-repentant-commercial-sex-workers/",
+          "outlet": "punchng.com"
+        }
+      ],
+      "via": "roundup",
+      "confidence": "low"
+    },
+    {
+      "id": "e984242f-414d-456d-8aa2-9faf37d981b2",
+      "title": "Sanusi presides over 1,500 widows’ mass wedding - Punch Newspapers",
+      "summary": "The Emir of Kano presided over a mass wedding of 1,500 couples, mostly widows, at the Kano City Central Mosque on May 5, 2019, sponsored by the Kano State Government and screened by the Kano Hisbah Board.",
+      "state": "Kano",
+      "city": "Kano",
+      "location": {
+        "latitude": 12.0022,
+        "longitude": 8.592,
+        "placeName": "Kano",
+        "state": "Kano",
+        "precision": "city"
+      },
+      "date": "2019-05-05",
+      "datePrecision": "day",
+      "year": 2019,
+      "couples": 1500,
+      "costNaira": null,
+      "dowryPerBrideNaira": null,
+      "sponsor": "Kano State Government",
+      "sponsorType": "state-government",
+      "beneficiaries": "widows",
+      "held": true,
+      "sources": [
+        {
+          "title": "Sanusi presides over 1,500 widows’ mass wedding - Punch Newspapers",
+          "url": "https://punchng.com/sanusi-presides-over-1500-widows-mass-wedding/",
+          "outlet": "punchng.com"
+        }
+      ],
+      "via": "article",
+      "confidence": "medium"
+    },
+    {
+      "id": "f0021180-4c2a-4164-9348-c8f26e5930c5",
+      "title": "13 couples exchange vows in Abuja mass wedding - Punch Newspapers",
+      "summary": "On June 2, 2018, 13 couples were married in a mass wedding ceremony held at Sacred Heart Catholic Church in Gwagwalada, Abuja, organised by the Catholic Charismatic Renewal to spiritually enrich church members.",
+      "state": "Federal Capital Territory",
+      "city": "Gwagwalada",
+      "location": {
+        "latitude": 8.9433,
+        "longitude": 7.0797,
+        "placeName": "Gwagwalada",
+        "state": "Federal Capital Territory",
+        "precision": "city"
+      },
+      "date": "2018-06-02",
+      "datePrecision": "day",
+      "year": 2018,
+      "couples": 13,
+      "costNaira": null,
+      "dowryPerBrideNaira": null,
+      "sponsor": "Catholic Charismatic Renewal",
+      "sponsorType": "religious-body",
+      "beneficiaries": "mixed",
+      "held": true,
+      "sources": [
+        {
+          "title": "13 couples exchange vows in Abuja mass wedding - Punch Newspapers",
+          "url": "https://punchng.com/13-couples-exchange-vows-in-abuja-mass-wedding/",
+          "outlet": "punchng.com"
+        }
+      ],
+      "via": "article",
+      "confidence": "medium"
+    },
+    {
+      "id": "6ba57eb4-4265-462d-b5d2-44d7ee809fff",
+      "title": "Oyo mass wedding",
+      "summary": "25 couples married in Oyo State, organised by Al-Balag Islamic Foundation.",
+      "state": "Oyo",
+      "city": "Ibadan",
+      "location": {
+        "latitude": 7.3775,
+        "longitude": 3.947,
+        "placeName": "Ibadan",
+        "state": "Oyo",
+        "precision": "city"
+      },
+      "date": "2017-08-01",
+      "datePrecision": "month",
+      "year": 2017,
+      "couples": 25,
+      "costNaira": null,
+      "dowryPerBrideNaira": null,
+      "sponsor": "Al-Balag Islamic Foundation",
+      "sponsorType": "ngo",
+      "beneficiaries": "unknown",
+      "held": true,
+      "sources": [
+        {
+          "title": "Oyo mass wedding",
+          "url": "https://tribuneonlineng.com/oyo-records-first-mass-wedding-25-couples-perform-nikkah/",
+          "outlet": "tribuneonlineng.com"
+        }
+      ],
+      "via": "roundup",
+      "confidence": "medium"
+    },
+    {
+      "id": "741f13f4-e924-4948-a7c1-ace2abe322a4",
+      "title": "‘Why I sponsored mass wedding of 50 Boko Haram orphans’ – Daily Trust",
+      "summary": "On 2017-01-07, Alhaji Mohammed Yakubu Jacob sponsored a mass wedding of 42 couples of Boko Haram orphans at the emir's palace in Gashua, Yobe State. The event was organized with the support of the Emir of Bade and Islamic clerics after HIV screening of the couples.",
+      "state": "Yobe",
+      "city": "Gashua",
+      "location": {
+        "latitude": 12.8722,
+        "longitude": 11.0472,
+        "placeName": "Gashua",
+        "state": "Yobe",
+        "precision": "city"
+      },
+      "date": "2017-01-07",
+      "datePrecision": "day",
+      "year": 2017,
+      "couples": 42,
+      "costNaira": null,
+      "dowryPerBrideNaira": null,
+      "sponsor": "Alhaji Mohammed Yakubu Jacob",
+      "sponsorType": "philanthropist",
+      "beneficiaries": "orphans",
+      "held": true,
+      "sources": [
+        {
+          "title": "‘Why I sponsored mass wedding of 50 Boko Haram orphans’ – Daily Trust",
+          "url": "https://dailytrust.com/why-i-sponsored-mass-wedding-of-50-boko-haram-orphans/",
+          "outlet": "dailytrust.com"
+        }
+      ],
+      "via": "article",
+      "confidence": "medium"
+    }
+  ],
+  "builtAt": "2026-08-10T11:08:44.646Z",
+  "stats": {
+    "articlesScanned": 237,
+    "articlesMatched": 181,
+    "editions": 28,
+    "statesCovered": 12,
+    "totalCouples": 12992
+  }
+}

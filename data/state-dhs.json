@@ -1,0 +1,318 @@
+{
+  "builtAt": "2026-08-10T11:02:17.257Z",
+  "survey": {
+    "name": "Nigeria Demographic and Health Survey 2023–24",
+    "surveyId": "NG2024DHS",
+    "publisher": "National Population Commission (Nigeria) and ICF · The DHS Program",
+    "surveyYear": 2024,
+    "url": "https://data.humdata.org/dataset/dhs-subnational-data-for-nigeria",
+    "note": "Fieldwork ran 2023–24. State-level estimates as published by The DHS Program."
+  },
+  "indicators": {
+    "medianAgeAtFirstMarriage": "Median age at first marriage, women aged 25–49 (years)",
+    "householdsWithElectricity": "Households with electricity (%)",
+    "womenLiterate": "Women who are literate (%)",
+    "womenSecondaryEducation": "Women with secondary or higher education (%)"
+  },
+  "states": [
+    {
+      "name": "Abia",
+      "womenSecondaryEducation": 91.5,
+      "womenLiterate": 93.5,
+      "householdsWithElectricity": 77.3
+    },
+    {
+      "name": "Adamawa",
+      "medianAgeAtFirstMarriage": 18.1,
+      "womenSecondaryEducation": 47,
+      "womenLiterate": 51.5,
+      "householdsWithElectricity": 29.1
+    },
+    {
+      "name": "Akwa Ibom",
+      "medianAgeAtFirstMarriage": 22.3,
+      "womenSecondaryEducation": 85,
+      "womenLiterate": 86.8,
+      "householdsWithElectricity": 60.3
+    },
+    {
+      "name": "Anambra",
+      "medianAgeAtFirstMarriage": 24.3,
+      "womenSecondaryEducation": 89.5,
+      "womenLiterate": 91.7,
+      "householdsWithElectricity": 86.3
+    },
+    {
+      "name": "Bauchi",
+      "medianAgeAtFirstMarriage": 17.5,
+      "womenSecondaryEducation": 28.2,
+      "womenLiterate": 36.9,
+      "householdsWithElectricity": 34.4
+    },
+    {
+      "name": "Bayelsa",
+      "medianAgeAtFirstMarriage": 23.3,
+      "womenSecondaryEducation": 86.2,
+      "womenLiterate": 82.6,
+      "householdsWithElectricity": 64.1
+    },
+    {
+      "name": "Benue",
+      "medianAgeAtFirstMarriage": 20.1,
+      "womenSecondaryEducation": 67.1,
+      "womenLiterate": 63,
+      "householdsWithElectricity": 37.8
+    },
+    {
+      "name": "Borno",
+      "medianAgeAtFirstMarriage": 18.3,
+      "womenSecondaryEducation": 35.3,
+      "womenLiterate": 43.8,
+      "householdsWithElectricity": 23.8
+    },
+    {
+      "name": "Cross River",
+      "medianAgeAtFirstMarriage": 24.6,
+      "womenSecondaryEducation": 83,
+      "womenLiterate": 81.6,
+      "householdsWithElectricity": 39.1
+    },
+    {
+      "name": "Delta",
+      "medianAgeAtFirstMarriage": 24.6,
+      "womenSecondaryEducation": 84.6,
+      "womenLiterate": 83.3,
+      "householdsWithElectricity": 73.8
+    },
+    {
+      "name": "Ebonyi",
+      "medianAgeAtFirstMarriage": 21.8,
+      "womenSecondaryEducation": 65.6,
+      "womenLiterate": 60.9,
+      "householdsWithElectricity": 35.9
+    },
+    {
+      "name": "Edo",
+      "medianAgeAtFirstMarriage": 24.9,
+      "womenSecondaryEducation": 87.3,
+      "womenLiterate": 88.4,
+      "householdsWithElectricity": 88.4
+    },
+    {
+      "name": "Ekiti",
+      "medianAgeAtFirstMarriage": 22.3,
+      "womenSecondaryEducation": 90.8,
+      "womenLiterate": 79.4,
+      "householdsWithElectricity": 75.1
+    },
+    {
+      "name": "Enugu",
+      "womenSecondaryEducation": 80,
+      "womenLiterate": 81.7,
+      "householdsWithElectricity": 80.8
+    },
+    {
+      "name": "Federal Capital Territory",
+      "medianAgeAtFirstMarriage": 24.2,
+      "womenSecondaryEducation": 84.6,
+      "womenLiterate": 87.7,
+      "householdsWithElectricity": 86.4
+    },
+    {
+      "name": "Gombe",
+      "medianAgeAtFirstMarriage": 16.9,
+      "womenSecondaryEducation": 39,
+      "womenLiterate": 42.9,
+      "householdsWithElectricity": 44.4
+    },
+    {
+      "name": "Imo",
+      "medianAgeAtFirstMarriage": 24.7,
+      "womenSecondaryEducation": 94,
+      "womenLiterate": 87,
+      "householdsWithElectricity": 63.3
+    },
+    {
+      "name": "Jigawa",
+      "medianAgeAtFirstMarriage": 16.3,
+      "womenSecondaryEducation": 22.3,
+      "womenLiterate": 23.9,
+      "householdsWithElectricity": 15.9
+    },
+    {
+      "name": "Kaduna",
+      "medianAgeAtFirstMarriage": 17.4,
+      "womenSecondaryEducation": 48.9,
+      "womenLiterate": 53.1,
+      "householdsWithElectricity": 42.9
+    },
+    {
+      "name": "Kano",
+      "medianAgeAtFirstMarriage": 17.4,
+      "womenSecondaryEducation": 46.2,
+      "womenLiterate": 61.3,
+      "householdsWithElectricity": 42.9
+    },
+    {
+      "name": "Katsina",
+      "medianAgeAtFirstMarriage": 16.6,
+      "womenSecondaryEducation": 32.6,
+      "womenLiterate": 37.2,
+      "householdsWithElectricity": 45.6
+    },
+    {
+      "name": "Kebbi",
+      "medianAgeAtFirstMarriage": 17.1,
+      "womenSecondaryEducation": 10.4,
+      "womenLiterate": 10.7,
+      "householdsWithElectricity": 18.8
+    },
+    {
+      "name": "Kogi",
+      "medianAgeAtFirstMarriage": 20.6,
+      "womenSecondaryEducation": 53,
+      "womenLiterate": 56.9,
+      "householdsWithElectricity": 45.9
+    },
+    {
+      "name": "Kwara",
+      "medianAgeAtFirstMarriage": 22.2,
+      "womenSecondaryEducation": 58.1,
+      "womenLiterate": 57.7,
+      "householdsWithElectricity": 74.3
+    },
+    {
+      "name": "Lagos",
+      "womenSecondaryEducation": 91.8,
+      "womenLiterate": 90.3,
+      "householdsWithElectricity": 94.8
+    },
+    {
+      "name": "Nasarawa",
+      "medianAgeAtFirstMarriage": 19.8,
+      "womenSecondaryEducation": 56.1,
+      "womenLiterate": 55.1,
+      "householdsWithElectricity": 65.2
+    },
+    {
+      "name": "Niger",
+      "medianAgeAtFirstMarriage": 18.2,
+      "womenSecondaryEducation": 21.6,
+      "womenLiterate": 22.5,
+      "householdsWithElectricity": 41.2
+    },
+    {
+      "name": "Ogun",
+      "medianAgeAtFirstMarriage": 23.1,
+      "womenSecondaryEducation": 79,
+      "womenLiterate": 83.4,
+      "householdsWithElectricity": 80.9
+    },
+    {
+      "name": "Ondo",
+      "medianAgeAtFirstMarriage": 22.5,
+      "womenSecondaryEducation": 77.3,
+      "womenLiterate": 74.5,
+      "householdsWithElectricity": 69.7
+    },
+    {
+      "name": "Osun",
+      "medianAgeAtFirstMarriage": 22.9,
+      "womenSecondaryEducation": 90.9,
+      "womenLiterate": 91.2,
+      "householdsWithElectricity": 90.6
+    },
+    {
+      "name": "Oyo",
+      "medianAgeAtFirstMarriage": 23.3,
+      "womenSecondaryEducation": 79,
+      "womenLiterate": 82.5,
+      "householdsWithElectricity": 78
+    },
+    {
+      "name": "Plateau",
+      "medianAgeAtFirstMarriage": 19.9,
+      "womenSecondaryEducation": 58,
+      "womenLiterate": 61.2,
+      "householdsWithElectricity": 27
+    },
+    {
+      "name": "Rivers",
+      "womenSecondaryEducation": 89,
+      "womenLiterate": 83.5,
+      "householdsWithElectricity": 86.3
+    },
+    {
+      "name": "Sokoto",
+      "medianAgeAtFirstMarriage": 15.9,
+      "womenSecondaryEducation": 13.4,
+      "womenLiterate": 16.4,
+      "householdsWithElectricity": 21.8
+    },
+    {
+      "name": "Taraba",
+      "medianAgeAtFirstMarriage": 19.2,
+      "womenSecondaryEducation": 39.9,
+      "womenLiterate": 34.5,
+      "householdsWithElectricity": 23.1
+    },
+    {
+      "name": "Yobe",
+      "medianAgeAtFirstMarriage": 16.9,
+      "womenSecondaryEducation": 24.6,
+      "womenLiterate": 22.2,
+      "householdsWithElectricity": 42
+    },
+    {
+      "name": "Zamfara",
+      "medianAgeAtFirstMarriage": 15.7,
+      "womenSecondaryEducation": 19,
+      "womenLiterate": 25,
+      "householdsWithElectricity": 27
+    }
+  ],
+  "zones": [
+    {
+      "name": "North Central",
+      "medianAgeAtFirstMarriage": 20.1,
+      "womenSecondaryEducation": 52,
+      "womenLiterate": 52.6,
+      "householdsWithElectricity": 52.4
+    },
+    {
+      "name": "North East",
+      "medianAgeAtFirstMarriage": 17.8,
+      "womenSecondaryEducation": 34.3,
+      "womenLiterate": 38.3,
+      "householdsWithElectricity": 31.8
+    },
+    {
+      "name": "North West",
+      "medianAgeAtFirstMarriage": 16.7,
+      "womenSecondaryEducation": 33.9,
+      "womenLiterate": 40.9,
+      "householdsWithElectricity": 35.1
+    },
+    {
+      "name": "South East",
+      "medianAgeAtFirstMarriage": 24.1,
+      "womenSecondaryEducation": 82.4,
+      "womenLiterate": 80.5,
+      "householdsWithElectricity": 68.7
+    },
+    {
+      "name": "South South",
+      "medianAgeAtFirstMarriage": 24.5,
+      "womenSecondaryEducation": 86.3,
+      "womenLiterate": 84.3,
+      "householdsWithElectricity": 72.1
+    },
+    {
+      "name": "South West",
+      "medianAgeAtFirstMarriage": 24,
+      "womenSecondaryEducation": 84.3,
+      "womenLiterate": 84.8,
+      "householdsWithElectricity": 84
+    }
+  ]
+}
