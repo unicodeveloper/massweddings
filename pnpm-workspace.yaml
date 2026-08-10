@@ -1,2 +1,11 @@
+# pnpm 10+ blocks dependency build scripts until each one is explicitly
+# approved. `pnpm approve-builds` writes the key but leaves the placeholder
+# string when it cannot prompt, and any value that is not a boolean counts as
+# undecided — which fails the install outright under --frozen-lockfile.
+#
+# unrs-resolver is the native module resolver behind
+# eslint-import-resolver-typescript, pulled in by eslint-config-next. Its
+# postinstall links the prebuilt binding for the platform; without it, linting
+# cannot resolve TypeScript imports.
 allowBuilds:
-  unrs-resolver: set this to true or false
+  unrs-resolver: true
