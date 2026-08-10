@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 64" width="320" height="64" role="img" aria-label="Nigeria Mass Weddings Map">
+  <rect width="320" height="64" fill="#0a0a0a"/>
+  <g transform="translate(16 16)">
+    <g fill="none" stroke="#fafafa" stroke-width="2" transform="scale(1.333)">
+      <circle cx="8.4" cy="12" r="6.5"/>
+      <circle cx="17.55" cy="12" r="4.3"/>
+    </g>
+  </g>
+  <text x="64" y="38" fill="#fafafa" font-family="Geist Mono, ui-monospace, SFMono-Regular, Menlo, monospace" font-size="15" font-weight="600" letter-spacing="0.5">NIGERIA MASS WEDDINGS MAP</text>
+</svg>

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+  <!-- Simplified mark for the 16px favicon slot only. Two rings cannot resolve
+       on a 16px grid — they close into a smudge — so this drops to the single
+       ring, which is the half of the mark that carries the meaning. Every
+       larger slot uses the real two-ring lockup. -->
+  <rect width="16" height="16" fill="#0a0a0a"/>
+  <path fill="#fafafa" fill-rule="evenodd" d="M 0.8,8 a 7.2,7.2 0 1,0 14.4,0 a 7.2,7.2 0 1,0 -14.4,0 Z M 4,8 a 4,4 0 1,0 8,0 a 4,4 0 1,0 -8,0 Z"/>
+</svg>

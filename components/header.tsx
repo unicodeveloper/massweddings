@@ -1,8 +1,9 @@
 "use client";
 
-import { HeartHandshake, Loader2, RefreshCw } from "lucide-react";
+import { Loader2, RefreshCw } from "lucide-react";
 import { useWeddingsStore } from "@/stores/weddings-store";
 import { AccountButton } from "@/components/auth/account-button";
+import { Logo } from "@/components/logo";
 
 interface HeaderProps {
   onRebuild: () => void;
@@ -13,15 +14,7 @@ export function Header({ onRebuild }: HeaderProps) {
 
   return (
     <header className="flex h-14 shrink-0 items-center justify-between border-b border-border bg-card px-4">
-      <div className="flex items-center gap-3">
-        <HeartHandshake className="h-5 w-5 text-primary" />
-        <div>
-          <h1 className="text-sm font-semibold leading-none">Nigeria Mass Weddings Map</h1>
-          <p className="mt-1 text-[11px] text-muted-foreground">
-            A decade of state-sponsored mass weddings, against the poverty and money behind them
-          </p>
-        </div>
-      </div>
+      <Logo className="min-w-0" />
 
       <div className="flex items-center gap-4">
         {error && <span className="max-w-xs truncate text-xs text-destructive">{error}</span>}
