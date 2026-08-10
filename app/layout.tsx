@@ -8,11 +8,12 @@ import {
   siteColors,
   siteCreator,
   siteDescription,
+  siteDescriptionShort,
   siteKeywords,
   siteLocale,
   siteName,
   siteShortName,
-  siteTagline,
+  siteTitle,
   siteUrl,
 } from "@/lib/site";
 
@@ -23,7 +24,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
 
   title: {
-    default: `${siteName} — ${siteTagline}`,
+    default: siteTitle,
     template: `%s — ${siteName}`,
   },
   description: siteDescription,
@@ -44,8 +45,8 @@ export const metadata: Metadata = {
     locale: siteLocale,
     url: "/",
     siteName,
-    title: `${siteName} — ${siteTagline}`,
-    description: siteDescription,
+    title: siteTitle,
+    description: siteDescriptionShort,
     // A relative path is enough here: Next resolves it against metadataBase
     // into the absolute URL every scraper insists on.
     images: [ogImage],
@@ -55,8 +56,8 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     site: siteCreator.twitter,
     creator: siteCreator.twitter,
-    title: `${siteName} — ${siteTagline}`,
-    description: siteDescription,
+    title: siteTitle,
+    description: siteDescriptionShort,
     // X reads its own tags rather than falling back to Open Graph, so the same
     // card has to be declared twice.
     images: [ogImage],

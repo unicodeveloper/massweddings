@@ -29,15 +29,32 @@ export const siteName = "Nigeria Mass Weddings Map";
 /** Used where the full name is too long to sit well — the PWA tile, mainly. */
 export const siteShortName = "Mass Weddings";
 
+/** The full line, used in the app header where there is room for it. */
 export const siteTagline =
   "A decade of state-sponsored mass weddings, against the poverty and money behind them";
 
 /**
- * Kept under ~160 characters so search results and link previews show it whole
- * rather than truncating mid-sentence.
+ * The tab title and every share card headline. 52 characters, which clears
+ * Google's ~60 truncation point, the ~60 that Facebook and LinkedIn allow
+ * og:title, and X's ~70 — one string that survives all four rather than a
+ * name-plus-tagline concatenation that gets cut mid-word everywhere.
+ */
+export const siteTitle = "Nigeria Mass Weddings Map — a decade, state by state";
+
+/**
+ * Search-result description. Google shows ~155 characters, so this runs longer
+ * than the share-card version to use the space it is given.
  */
 export const siteDescription =
   "Every government-sponsored mass wedding in Nigeria over the past decade, mapped against state poverty rates, marriage age and federal allocations.";
+
+/**
+ * Share-card description. Social previews cut around 125 characters — and on
+ * mobile often sooner — so this is the same claim tightened to fit inside that
+ * limit whole.
+ */
+export const siteDescriptionShort =
+  "Every state-sponsored mass wedding in Nigeria for a decade, mapped against poverty, marriage age and federal money.";
 
 /** The longer version, for the structured-data payload where length is free. */
 export const siteDescriptionLong =
