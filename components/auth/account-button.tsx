@@ -35,7 +35,7 @@ export function AccountButton() {
         onClick={() => (isAuthenticated ? setShowMenu(!showMenu) : setShowModal(true))}
         disabled={isLoading}
         className={cn(
-          "flex items-center gap-2 rounded-md border border-border px-2.5 py-1.5 text-xs transition-colors hover:bg-accent",
+          "flex min-h-11 min-w-11 items-center justify-center gap-2 rounded-md border border-border px-2.5 text-xs transition-colors hover:bg-accent lg:min-h-0 lg:min-w-0 lg:py-1.5",
           isLoading && "opacity-50"
         )}
       >

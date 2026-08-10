@@ -59,7 +59,7 @@ export function StatsBar() {
   ];
 
   return (
-    <div className="grid grid-cols-2 gap-px border-b border-border bg-border md:grid-cols-4">
+    <div className="grid grid-cols-2 gap-px border-b border-border bg-border [@media(max-height:500px)]:hidden md:grid-cols-4">
       {items.map((item) => (
         <div key={item.label} className="bg-card px-3 py-2 md:px-4 md:py-3">
           <div className="flex items-center gap-1.5 text-[10px] uppercase tracking-wide text-muted-foreground">

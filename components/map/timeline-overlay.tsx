@@ -38,7 +38,7 @@ export function TimelineOverlay() {
   return (
     // On phones this sits along the bottom of the map, out of the way of the
     // Layers button in the top corner; from md up it returns to the top left.
-    <div className="absolute inset-x-3 bottom-3 rounded-lg border border-border bg-card/95 p-3 backdrop-blur md:inset-x-auto md:bottom-auto md:left-4 md:top-4 md:w-64">
+    <div className="absolute inset-x-3 bottom-3 rounded-lg border border-border bg-card/95 p-3 backdrop-blur [@media(max-height:500px)]:p-2 lg:inset-x-auto lg:bottom-auto lg:left-4 lg:top-4 lg:w-64">
       <div className="mb-2 flex items-baseline justify-between">
         <span className="text-[10px] uppercase tracking-wide text-muted-foreground">
           {years[0].year}–{years[years.length - 1].year}
@@ -53,7 +53,7 @@ export function TimelineOverlay() {
         )}
       </div>
 
-      <div className="flex h-12 items-end gap-0.5">
+      <div className="flex h-12 items-end gap-0.5 [@media(max-height:500px)]:h-7">
         {years.map((entry) => (
           <button
             key={entry.year}

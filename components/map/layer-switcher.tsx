@@ -36,7 +36,7 @@ export function LayerSwitcher() {
         onClick={() => setIsOpen(true)}
         aria-label="Map layers"
         className={cn(
-          "absolute right-3 top-3 flex items-center gap-1.5 rounded-lg border border-border bg-card/95 px-3 py-2 text-xs backdrop-blur md:hidden",
+          "absolute right-3 top-3 flex items-center gap-1.5 rounded-lg border border-border bg-card/95 px-3 py-2 text-xs backdrop-blur lg:hidden",
           isOpen && "hidden"
         )}
       >
@@ -47,8 +47,8 @@ export function LayerSwitcher() {
       <div
         className={cn(
           "absolute rounded-lg border border-border bg-card/95 p-3 backdrop-blur",
-          "inset-x-3 top-3 max-h-[70%] overflow-y-auto md:inset-x-auto md:right-4 md:top-4 md:max-h-none md:w-64 md:overflow-visible",
-          !isOpen && "hidden md:block"
+          "inset-x-3 top-3 max-h-[70%] overflow-y-auto lg:inset-x-auto lg:right-4 lg:top-4 lg:max-h-none lg:w-64 lg:overflow-visible",
+          !isOpen && "hidden lg:block"
         )}
       >
       <div className="flex items-center gap-2 text-xs font-semibold">
@@ -57,7 +57,7 @@ export function LayerSwitcher() {
         <button
           onClick={() => setIsOpen(false)}
           aria-label="Close layers"
-          className="ml-auto rounded p-0.5 text-muted-foreground hover:bg-accent hover:text-foreground md:hidden"
+          className="ml-auto rounded p-0.5 text-muted-foreground hover:bg-accent hover:text-foreground lg:hidden"
         >
           <X className="h-3.5 w-3.5" />
         </button>

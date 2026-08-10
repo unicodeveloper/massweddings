@@ -42,7 +42,7 @@ export function Header({ onRebuild }: HeaderProps) {
               : "Build the dataset from scratch. Takes several minutes."
           }
           aria-label={isRebuilding ? "Rebuilding dataset" : "Rebuild dataset"}
-          className="flex items-center gap-1.5 rounded-md border border-border px-2.5 py-1.5 text-xs transition-colors hover:bg-accent disabled:opacity-60 md:px-3"
+          className="flex min-h-11 min-w-11 items-center justify-center gap-1.5 rounded-md border border-border px-2.5 text-xs transition-colors hover:bg-accent disabled:opacity-60 lg:min-h-0 lg:min-w-0 lg:px-3 lg:py-1.5"
         >
           {isRebuilding ? (
             <Loader2 className="h-3.5 w-3.5 animate-spin" />

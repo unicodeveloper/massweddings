@@ -14,7 +14,7 @@ export function MapLegend({ scale }: { scale: Scale | null }) {
     // Hidden on phones: the timeline already occupies the bottom of the map, and
     // two stacked legend cards would cover most of the country. The popup carries
     // the same information per ceremony.
-    <div className="pointer-events-none absolute bottom-8 left-4 hidden space-y-2 md:block">
+    <div className="pointer-events-none absolute bottom-8 left-4 hidden space-y-2 lg:block">
       {choropleth !== "none" && scale && scale.stops.length > 0 && (
         <div className="pointer-events-auto w-60 rounded-lg border border-border bg-card/95 p-3 backdrop-blur">
           <p className="text-[10px] uppercase tracking-wide text-muted-foreground">
