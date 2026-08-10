@@ -1,6 +1,7 @@
 "use client";
 
-import { Globe2, Layers, Map as MapIcon, MapPin, Tag, RotateCcw } from "lucide-react";
+import { useState } from "react";
+import { Globe2, Layers, Map as MapIcon, MapPin, Tag, RotateCcw, X } from "lucide-react";
 import { useMapStore } from "@/stores/map-store";
 import { cn } from "@/lib/utils";
 import { choroplethLabels, choroplethVintages, type ChoroplethLayer } from "@/types";
@@ -25,11 +26,41 @@ export function LayerSwitcher() {
     resetView,
   } = useMapStore();
 
+  // A permanently open panel would cover most of a phone screen, so below md it
+  // collapses to a button. From md up it is always open and the toggle is hidden.
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
-    <div className="absolute right-4 top-4 w-64 rounded-lg border border-border bg-card/95 p-3 backdrop-blur">
+    <>
+      <button
+        onClick={() => setIsOpen(true)}
+        aria-label="Map layers"
+        className={cn(
+          "absolute right-3 top-3 flex items-center gap-1.5 rounded-lg border border-border bg-card/95 px-3 py-2 text-xs backdrop-blur md:hidden",
+          isOpen && "hidden"
+        )}
+      >
+        <Layers className="h-3.5 w-3.5" />
+        Layers
+      </button>
+
+      <div
+        className={cn(
+          "absolute rounded-lg border border-border bg-card/95 p-3 backdrop-blur",
+          "inset-x-3 top-3 max-h-[70%] overflow-y-auto md:inset-x-auto md:right-4 md:top-4 md:max-h-none md:w-64 md:overflow-visible",
+          !isOpen && "hidden md:block"
+        )}
+      >
       <div className="flex items-center gap-2 text-xs font-semibold">
         <Layers className="h-3.5 w-3.5 text-primary" />
         Fill states by
+        <button
+          onClick={() => setIsOpen(false)}
+          aria-label="Close layers"
+          className="ml-auto rounded p-0.5 text-muted-foreground hover:bg-accent hover:text-foreground md:hidden"
+        >
+          <X className="h-3.5 w-3.5" />
+        </button>
       </div>
 
       <div className="mt-2 space-y-2">
@@ -101,7 +132,8 @@ export function LayerSwitcher() {
           Reset view
         </button>
       </div>
-    </div>
+      </div>
+    </>
   );
 }
 

@@ -62,7 +62,8 @@ export function StatePanel() {
   const spend = stateEvents.reduce((sum, event) => sum + (event.costNaira ?? 0), 0);
 
   return (
-    <div className="absolute inset-y-0 right-0 z-20 flex w-[420px] max-w-full flex-col border-l border-border bg-card shadow-2xl animate-slide-in">
+    // Full-screen sheet on phones, side panel from md up.
+    <div className="absolute inset-0 z-20 flex flex-col bg-card shadow-2xl animate-slide-in md:inset-y-0 md:left-auto md:right-0 md:w-[420px] md:border-l md:border-border">
       <div className="flex items-start justify-between gap-2 border-b border-border p-4">
         <div>
           <h2 className="text-lg font-semibold leading-tight">{profile.name}</h2>

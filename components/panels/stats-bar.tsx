@@ -61,12 +61,12 @@ export function StatsBar() {
   return (
     <div className="grid grid-cols-2 gap-px border-b border-border bg-border md:grid-cols-4">
       {items.map((item) => (
-        <div key={item.label} className="bg-card px-4 py-3">
+        <div key={item.label} className="bg-card px-3 py-2 md:px-4 md:py-3">
           <div className="flex items-center gap-1.5 text-[10px] uppercase tracking-wide text-muted-foreground">
-            <item.icon className="h-3 w-3" />
-            {item.label}
+            <item.icon className="h-3 w-3 shrink-0" />
+            <span className="truncate">{item.label}</span>
           </div>
-          <p className="tabular mt-1 text-xl font-semibold leading-none">{item.value}</p>
+          <p className="tabular mt-1 text-lg font-semibold leading-none md:text-xl">{item.value}</p>
           <p className="mt-1 truncate text-[10px] text-muted-foreground">{item.hint}</p>
         </div>
       ))}

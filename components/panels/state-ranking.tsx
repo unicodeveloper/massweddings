@@ -4,6 +4,7 @@ import { useMemo, useState } from "react";
 import { ArrowUpDown } from "lucide-react";
 import { useWeddingsStore } from "@/stores/weddings-store";
 import { useMapStore } from "@/stores/map-store";
+import { useUiStore } from "@/stores/ui-store";
 import { povertyCorrelation, summariseByState } from "@/lib/state-data";
 import { formatCompact, formatNumber } from "@/lib/metrics";
 import { cn } from "@/lib/utils";
@@ -21,6 +22,7 @@ const SORTS: Array<{ id: SortKey; label: string }> = [
 export function StateRanking() {
   const { filteredEvents, selectState } = useWeddingsStore();
   const { flyTo } = useMapStore();
+  const showMap = useUiStore((state) => state.showMap);
   const [sort, setSort] = useState<SortKey>("editions");
   const [showAll, setShowAll] = useState(false);
 
@@ -82,6 +84,9 @@ export function StateRanking() {
             onClick={() => {
               selectState(summary.state);
               flyTo(summary.profile.lng, summary.profile.lat, 7);
+              // The state panel lives over the map, which is hidden on phones
+              // while a sidebar panel is open — switch back or the tap does nothing.
+              showMap();
             }}
             className="group w-full rounded-md px-2 py-1.5 text-left transition-colors hover:bg-accent"
           >

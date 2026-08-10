@@ -1,8 +1,8 @@
 "use client";
 
-import { useState } from "react";
 import { BarChart3, FileSearch, ListOrdered, Newspaper, Radio } from "lucide-react";
 import { cn } from "@/lib/utils";
+import { useUiStore, type PanelTab } from "@/stores/ui-store";
 import { EventFeed } from "./event-feed";
 import { RegionBreakdown } from "./region-breakdown";
 import { StateRanking } from "./state-ranking";
@@ -10,9 +10,7 @@ import { DataProvenance } from "./data-provenance";
 import { LiveFeed } from "./live-feed";
 import { Intel } from "./intel";
 
-type Tab = "regions" | "states" | "ceremonies" | "live" | "intel";
-
-const TABS: Array<{ id: Tab; label: string; icon: typeof BarChart3 }> = [
+const TABS: Array<{ id: PanelTab; label: string; icon: typeof BarChart3 }> = [
   { id: "regions", label: "Regions", icon: BarChart3 },
   { id: "states", label: "States", icon: ListOrdered },
   { id: "ceremonies", label: "Records", icon: Newspaper },
@@ -20,20 +18,27 @@ const TABS: Array<{ id: Tab; label: string; icon: typeof BarChart3 }> = [
   { id: "intel", label: "Intel", icon: FileSearch },
 ];
 
-export function Sidebar() {
-  const [tab, setTab] = useState<Tab>("regions");
+export function Sidebar({ className }: { className?: string }) {
+  const { panelTab, setPanelTab } = useUiStore();
 
   return (
-    <aside className="flex h-full w-[380px] shrink-0 flex-col border-l border-border bg-card">
-      <div className="flex border-b border-border">
+    <aside
+      className={cn(
+        // Full width on phones, a fixed rail from md up.
+        "flex h-full w-full shrink-0 flex-col bg-card md:w-[380px] md:border-l md:border-border",
+        className
+      )}
+    >
+      {/* The mobile bottom nav already switches panels, so this row is desktop-only. */}
+      <div className="hidden border-b border-border md:flex">
         {TABS.map((entry) => (
           <button
             key={entry.id}
-            onClick={() => setTab(entry.id)}
+            onClick={() => setPanelTab(entry.id)}
             title={entry.label}
             className={cn(
               "flex flex-1 flex-col items-center justify-center gap-0.5 py-2 text-[10px] font-medium transition-colors",
-              tab === entry.id
+              panelTab === entry.id
                 ? "border-b-2 border-primary text-primary"
                 : "text-muted-foreground hover:text-foreground"
             )}
@@ -44,17 +49,17 @@ export function Sidebar() {
         ))}
       </div>
 
-      <div className="flex-1 overflow-y-auto">
-        {tab === "regions" && (
+      <div className="flex-1 overflow-y-auto overscroll-contain">
+        {panelTab === "regions" && (
           <>
             <RegionBreakdown />
             <DataProvenance />
           </>
         )}
-        {tab === "states" && <StateRanking />}
-        {tab === "ceremonies" && <EventFeed />}
-        {tab === "live" && <LiveFeed />}
-        {tab === "intel" && <Intel />}
+        {panelTab === "states" && <StateRanking />}
+        {panelTab === "ceremonies" && <EventFeed />}
+        {panelTab === "live" && <LiveFeed />}
+        {panelTab === "intel" && <Intel />}
       </div>
     </aside>
   );

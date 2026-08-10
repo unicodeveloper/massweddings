@@ -3,6 +3,8 @@
 import { Loader2 } from "lucide-react";
 import { useWeddings } from "@/hooks/use-weddings";
 import { useWeddingsStore } from "@/stores/weddings-store";
+import { useUiStore } from "@/stores/ui-store";
+import { cn } from "@/lib/utils";
 import { Header } from "@/components/header";
 import { NigeriaMap } from "@/components/map/nigeria-map";
 import { LayerSwitcher } from "@/components/map/layer-switcher";
@@ -11,24 +13,33 @@ import { Sidebar } from "@/components/panels/sidebar";
 import { StatsBar } from "@/components/panels/stats-bar";
 import { StatePanel } from "@/components/panels/state-panel";
 import { MarketsFooter } from "@/components/panels/markets-footer";
+import { MobileNav } from "@/components/mobile-nav";
 import { CreditErrorBanner } from "@/components/credit-error-banner";
 import { AuthInitializer } from "@/components/auth";
 
 export default function Home() {
   const { rebuild, isLoading, isRebuilding } = useWeddings();
   const { events, error } = useWeddingsStore();
+  const mobileView = useUiStore((state) => state.mobileView);
 
   const isEmpty = !isLoading && events.length === 0;
 
   return (
     <AuthInitializer>
-      <div className="flex h-screen flex-col overflow-hidden">
+      {/* dvh rather than vh: iOS Safari's collapsing toolbar makes vh overshoot. */}
+      <div className="flex h-[100dvh] flex-col overflow-hidden">
         <CreditErrorBanner />
         <Header onRebuild={rebuild} />
         <StatsBar />
 
         <div className="relative flex min-h-0 flex-1">
-          <div className="relative min-w-0 flex-1">
+          <div
+            className={cn(
+              "relative min-w-0 flex-1",
+              // On phones the map yields to whichever panel is open.
+              mobileView === "panel" && "hidden md:block"
+            )}
+          >
             {isEmpty ? (
               <EmptyState onRebuild={rebuild} isRebuilding={isRebuilding} message={error} />
             ) : (
@@ -41,10 +52,11 @@ export default function Home() {
             <StatePanel />
           </div>
 
-          <Sidebar />
+          <Sidebar className={cn(mobileView === "map" && "hidden md:flex")} />
         </div>
 
         <MarketsFooter />
+        <MobileNav />
       </div>
     </AuthInitializer>
   );
@@ -60,7 +72,7 @@ function EmptyState({
   message: string | null;
 }) {
   return (
-    <div className="flex h-full items-center justify-center p-8">
+    <div className="flex h-full items-center justify-center p-6">
       <div className="max-w-md space-y-3 text-center">
         <h2 className="text-lg font-semibold">No dataset yet</h2>
         <p className="text-sm text-muted-foreground">

@@ -12,8 +12,14 @@ import {
 import { cn } from "@/lib/utils";
 import { formatProbability, formatVolume, getLeadingOutcome, type ParsedMarket } from "@/lib/polymarket";
 
-const HEADER_HEIGHT = 44;
-const EXPANDED_HEIGHT = 260;
+/**
+ * Heights live in classes rather than inline styles so the drawer can be shorter
+ * on a phone, where 260px would swallow most of the viewport.
+ */
+const COLLAPSED = "h-11";
+const EXPANDED = "h-[200px] md:h-[260px]";
+const ROW = "h-11";
+const BODY = "h-[156px] md:h-[216px]";
 
 /** What the panel searches Polymarket for, most specific first. */
 const FEEDS = [
@@ -77,17 +83,21 @@ export function MarketsFooter() {
 
   return (
     <div
-      className="shrink-0 overflow-hidden border-t border-border bg-card transition-[height] duration-300"
-      style={{ height: isExpanded ? EXPANDED_HEIGHT : HEADER_HEIGHT }}
+      className={cn(
+        "shrink-0 overflow-hidden border-t border-border bg-card transition-[height] duration-300",
+        isExpanded ? EXPANDED : COLLAPSED
+      )}
     >
-      <div className="flex items-center justify-between px-4" style={{ height: HEADER_HEIGHT }}>
+      <div className={cn("flex items-center justify-between gap-2 px-3 md:px-4", ROW)}>
         <button
           onClick={() => setIsExpanded(!isExpanded)}
           className="flex flex-1 items-center gap-2 text-left"
         >
-          <TrendingUp className="h-4 w-4 text-primary" />
-          <span className="text-xs font-semibold">Prediction markets</span>
-          <span className="text-[10px] text-muted-foreground">powered by Polymarket</span>
+          <TrendingUp className="h-4 w-4 shrink-0 text-primary" />
+          <span className="truncate text-xs font-semibold">Prediction markets</span>
+          <span className="hidden text-[10px] text-muted-foreground lg:inline">
+            powered by Polymarket
+          </span>
           {markets.length > 0 && !isExpanded && (
             <span className="rounded-full bg-primary/15 px-2 py-0.5 text-[10px] text-primary">
               {markets.length} live
@@ -95,7 +105,7 @@ export function MarketsFooter() {
           )}
         </button>
 
-        <div className="flex items-center gap-3">
+        <div className="flex shrink-0 items-center gap-2 md:gap-3">
           {isExpanded && (
             <>
               <div className="flex gap-1">
@@ -134,7 +144,7 @@ export function MarketsFooter() {
                 href="https://polymarket.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-1 text-[10px] text-muted-foreground transition-colors hover:text-foreground"
+                className="hidden items-center gap-1 text-[10px] text-muted-foreground transition-colors hover:text-foreground sm:flex"
               >
                 View all
                 <ExternalLink className="h-2.5 w-2.5" />
@@ -153,10 +163,7 @@ export function MarketsFooter() {
       </div>
 
       {isExpanded && (
-        <div
-          className="overflow-x-auto border-t border-border px-4 py-3"
-          style={{ height: EXPANDED_HEIGHT - HEADER_HEIGHT }}
-        >
+        <div className={cn("overflow-x-auto border-t border-border px-3 py-3 md:px-4", BODY)}>
           {error && (
             <div className="flex items-center gap-2 text-xs text-destructive">
               <AlertTriangle className="h-4 w-4" />
@@ -204,7 +211,7 @@ function MarketCard({ market }: { market: ParsedMarket }) {
       href={market.url}
       target="_blank"
       rel="noopener noreferrer"
-      className="group flex h-full w-64 shrink-0 flex-col rounded-lg border border-border bg-background p-3 transition-colors hover:bg-accent"
+      className="group flex h-full w-56 shrink-0 flex-col rounded-lg border border-border bg-background p-3 transition-colors hover:bg-accent md:w-64"
     >
       <p className="line-clamp-3 text-xs font-medium leading-snug transition-colors group-hover:text-primary">
         {market.question}
