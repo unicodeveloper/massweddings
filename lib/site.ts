@@ -77,6 +77,21 @@ export const siteRepository = "https://github.com/unicodeveloper/massweddings";
  */
 export const ogImageSize = { width: 1200, height: 630 };
 
+/**
+ * The share card is a fixed asset rather than a per-request render. Crawlers
+ * fetch it far more often than people share the page, and several of them
+ * (WhatsApp especially) give up on a slow image and unfurl with no preview at
+ * all — a static file behind the CDN never loses that race. JPEG because the
+ * card is a textured print poster with no flat areas to band: it encodes to a
+ * quarter of the PNG's weight with no visible loss on the type.
+ */
+export const ogImage = {
+  url: "/og-wedding-belt.jpg",
+  type: "image/jpeg",
+  ...ogImageSize,
+  alt: 'A 1960s-style Nigerian tourism poster reading "The Wedding Belt", above the line "Come to Nigeria single. Leave married. All government sponsored". A registrar sits at a trestle table with a ledger while a queue of couples in babban riga and veils stretches back past a mud-brick city wall.',
+} as const;
+
 /** Brand colours, matched to the app's dark shell rather than re-picked. */
 export const siteColors = {
   background: "#0a0a0a",

@@ -4,6 +4,7 @@ import "mapbox-gl/dist/mapbox-gl.css";
 import "./globals.css";
 import { StructuredData } from "@/components/structured-data";
 import {
+  ogImage,
   siteColors,
   siteCreator,
   siteDescription,
@@ -45,8 +46,9 @@ export const metadata: Metadata = {
     siteName,
     title: `${siteName} — ${siteTagline}`,
     description: siteDescription,
-    // Images come from app/opengraph-image.tsx, which Next resolves to an
-    // absolute URL against metadataBase automatically.
+    // A relative path is enough here: Next resolves it against metadataBase
+    // into the absolute URL every scraper insists on.
+    images: [ogImage],
   },
 
   twitter: {
@@ -55,6 +57,9 @@ export const metadata: Metadata = {
     creator: siteCreator.twitter,
     title: `${siteName} — ${siteTagline}`,
     description: siteDescription,
+    // X reads its own tags rather than falling back to Open Graph, so the same
+    // card has to be declared twice.
+    images: [ogImage],
   },
 
   robots: {
