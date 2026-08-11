@@ -1,11 +1,11 @@
 import type { Metadata, Viewport } from "next";
 import { GeistMono } from "geist/font/mono";
+import Script from "next/script";
 import "mapbox-gl/dist/mapbox-gl.css";
 import "./globals.css";
 import { StructuredData } from "@/components/structured-data";
 import {
   ogImage,
-  siteColors,
   siteCreator,
   siteDescription,
   siteDescriptionShort,
@@ -16,6 +16,21 @@ import {
   siteTitle,
   siteUrl,
 } from "@/lib/site";
+
+const themeScript = `
+(() => {
+  try {
+    const stored = localStorage.getItem("massweddings_theme") || "dark";
+    const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+    const resolved = stored === "system" ? (prefersDark ? "dark" : "light") : stored;
+    document.documentElement.classList.toggle("dark", resolved === "dark");
+    document.documentElement.style.colorScheme = resolved;
+  } catch {
+    document.documentElement.classList.add("dark");
+    document.documentElement.style.colorScheme = "dark";
+  }
+})();
+`;
 
 export const metadata: Metadata = {
   // Everything below can use relative paths once this is set; without it the
@@ -99,8 +114,11 @@ export const metadata: Metadata = {
 };
 
 export const viewport: Viewport = {
-  themeColor: siteColors.background,
-  colorScheme: "dark",
+  themeColor: [
+    { media: "(prefers-color-scheme: light)", color: "#f8fafc" },
+    { media: "(prefers-color-scheme: dark)", color: "#0a0a0a" },
+  ],
+  colorScheme: "light dark",
   width: "device-width",
   initialScale: 1,
   // Deliberately not locking maximumScale/userScalable: the map handles its own
@@ -110,8 +128,13 @@ export const viewport: Viewport = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en-NG" className="dark">
+    <html lang="en-NG" suppressHydrationWarning>
       <head>
+        <Script
+          id="theme-init"
+          strategy="beforeInteractive"
+          dangerouslySetInnerHTML={{ __html: themeScript }}
+        />
         <StructuredData />
       </head>
       <body className={`${GeistMono.className} min-h-screen antialiased`}>{children}</body>

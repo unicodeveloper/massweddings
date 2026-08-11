@@ -108,19 +108,19 @@ OPENAI_API_KEY=sk-your_key_here
 OPENAI_MODEL=gpt-4.1-mini
 
 # 'self-hosted' (default) runs everything on the key above.
-# 'valyu' puts Live Feed and Intel behind a sign-in. See below.
+# 'valyu' puts Live Feed, Intel and state briefings behind a sign-in. See below.
 NEXT_PUBLIC_APP_MODE=self-hosted
 
 # Deployment only
 NEXT_PUBLIC_SITE_URL=https://your-domain          # absolute URL for share cards
-ALLOW_REBUILD=false                               # disable the Rebuild button in public
+ALLOW_REBUILD=true                                # only when intentionally refreshing data in production
 ```
 
 `NEXT_PUBLIC_SITE_URL` matters more than it looks: Open Graph and Twitter both reject relative image URLs, so without it share cards render blank. On Railway the injected `RAILWAY_PUBLIC_DOMAIN` is used automatically; everywhere else set it explicitly. It falls back to `http://localhost:3000` in development.
 
 ### 4. Who pays for the live searches
 
-The map, the charts and every cached figure are open to anyone. The two features that hit Valyu on demand, **Live Feed** and **Intel**, can be put behind a sign-in so they run on the reader's own credits rather than yours. Set `NEXT_PUBLIC_APP_MODE=valyu` and add the OAuth block:
+The map, the charts and every cached figure are open to anyone. The features that hit Valyu on demand — **Live Feed**, **Intel** and state briefings — can be put behind a sign-in so they run on the reader's own credits rather than yours. Set `NEXT_PUBLIC_APP_MODE=valyu` and add the OAuth block:
 
 ```env
 NEXT_PUBLIC_VALYU_AUTH_URL=https://auth.valyu.ai
@@ -166,8 +166,10 @@ from open datasets on HDX and The DHS Program, so the population, poverty and
 npm run build && npm start
 ```
 
-Set `ALLOW_REBUILD=false` in production. Without it, `POST /api/weddings` is open
-and any visitor can trigger a full rebuild on your API credits.
+Rebuilds are enabled automatically in development. In production they are disabled by default:
+set `ALLOW_REBUILD=true` only while intentionally refreshing the cached dataset, then remove it
+again. Without that explicit opt-in, the Rebuild button stays hidden and `POST /api/weddings`
+returns `403`.
 
 ## Reading it honestly
 

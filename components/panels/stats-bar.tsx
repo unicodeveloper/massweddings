@@ -42,7 +42,7 @@ export function StatsBar() {
       icon: HeartHandshake,
       label: "Couples married",
       value: formatCompact(stats.couples),
-      hint: `largest single edition: ${formatNumber(stats.biggest)}`,
+      hint: `largest edition: ${formatCompact(stats.biggest)}`,
     },
     {
       icon: MapPinned,

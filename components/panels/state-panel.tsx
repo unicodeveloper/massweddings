@@ -5,8 +5,12 @@ import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import { ExternalLink, Loader2, Sparkles, X } from "lucide-react";
 import { useWeddingsStore } from "@/stores/weddings-store";
+import { useAuthStore } from "@/stores/auth-store";
+import { useCreditErrorStore, CREDIT_ERROR_MESSAGE } from "@/stores/credit-error-store";
+import { isSelfHostedMode } from "@/lib/app-mode";
 import { getStateProfile } from "@/lib/state-data";
 import { formatCompact, formatEventDate, formatNaira, formatNumber } from "@/lib/metrics";
+import { SignInModal } from "@/components/auth/sign-in-modal";
 
 interface Brief {
   answer: string;
@@ -16,11 +20,14 @@ interface Brief {
 /** Detail view for a clicked state: the official figures, its editions, and a live briefing. */
 export function StatePanel() {
   const { selectedState, selectState, events } = useWeddingsStore();
+  const { getAccessToken } = useAuthStore();
   const [brief, setBrief] = useState<Brief | null>(null);
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  const [showSignIn, setShowSignIn] = useState(false);
 
   const profile = selectedState ? getStateProfile(selectedState) : null;
+  const needsSignIn = !isSelfHostedMode() && !getAccessToken();
   const stateEvents = useMemo(
     () => events.filter((event) => event.state === selectedState),
     [events, selectedState]
@@ -34,6 +41,13 @@ export function StatePanel() {
 
   const loadBrief = useCallback(async () => {
     if (!selectedState) return;
+
+    const accessToken = getAccessToken();
+    if (!isSelfHostedMode() && !accessToken) {
+      setShowSignIn(true);
+      return;
+    }
+
     setIsLoading(true);
     setError(null);
 
@@ -41,9 +55,22 @@ export function StatePanel() {
       const response = await fetch("/api/state-brief", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ state: selectedState }),
+        body: JSON.stringify({ state: selectedState, accessToken }),
       });
       const data = await response.json();
+
+      if (response.status === 401 || data.requiresAuth) {
+        setError(data.error ?? "Sign in to build a state briefing");
+        setShowSignIn(true);
+        return;
+      }
+
+      if (response.status === 402) {
+        useCreditErrorStore.getState().setCreditError(CREDIT_ERROR_MESSAGE);
+        setError("Insufficient Valyu credits.");
+        return;
+      }
+
       if (!response.ok) {
         setError(data.error ?? "Could not build a briefing");
         return;
@@ -54,7 +81,7 @@ export function StatePanel() {
     } finally {
       setIsLoading(false);
     }
-  }, [selectedState]);
+  }, [getAccessToken, selectedState]);
 
   if (!selectedState || !profile) return null;
 
@@ -62,8 +89,9 @@ export function StatePanel() {
   const spend = stateEvents.reduce((sum, event) => sum + (event.costNaira ?? 0), 0);
 
   return (
-    // Full-screen sheet on phones, side panel from md up.
-    <div className="absolute inset-0 z-20 flex flex-col bg-card shadow-2xl animate-slide-in md:inset-y-0 md:left-auto md:right-0 md:w-[420px] md:border-l md:border-border">
+    <>
+      {/* Full-screen sheet on phones, side panel from md up. */}
+      <div className="absolute inset-0 z-20 flex flex-col bg-card shadow-2xl animate-slide-in md:inset-y-0 md:left-auto md:right-0 md:w-[420px] md:border-l md:border-border">
       <div className="flex items-start justify-between gap-2 border-b border-border p-4">
         <div>
           <h2 className="text-lg font-semibold leading-tight">{profile.name}</h2>
@@ -184,7 +212,7 @@ export function StatePanel() {
           <div className="flex items-center justify-between">
             <h3 className="text-sm font-semibold">Live briefing</h3>
             <button
-              onClick={loadBrief}
+              onClick={needsSignIn ? () => setShowSignIn(true) : loadBrief}
               disabled={isLoading}
               className="flex items-center gap-1.5 rounded-md border border-primary/40 bg-primary/10 px-2.5 py-1 text-[11px] text-primary transition-colors hover:bg-primary/20 disabled:opacity-50"
             >
@@ -193,7 +221,7 @@ export function StatePanel() {
               ) : (
                 <Sparkles className="h-3 w-3" />
               )}
-              {brief ? "Refresh" : "Research with Valyu"}
+              {needsSignIn ? "Sign in to research" : brief ? "Refresh" : "Research with Valyu"}
             </button>
           </div>
 
@@ -207,7 +235,7 @@ export function StatePanel() {
 
           {brief && (
             <div className="space-y-3">
-              <div className="prose prose-invert max-w-none text-xs leading-relaxed [&_h2]:mt-3 [&_h2]:text-sm [&_h3]:mt-3 [&_h3]:text-xs [&_li]:my-0.5 [&_p]:my-2 [&_table]:text-[10px]">
+              <div className="prose max-w-none text-xs leading-relaxed dark:prose-invert [&_h2]:mt-3 [&_h2]:text-sm [&_h3]:mt-3 [&_h3]:text-xs [&_li]:my-0.5 [&_p]:my-2 [&_table]:text-[10px]">
                 <ReactMarkdown remarkPlugins={[remarkGfm]}>{brief.answer}</ReactMarkdown>
               </div>
 
@@ -236,7 +264,10 @@ export function StatePanel() {
           )}
         </div>
       </div>
-    </div>
+      </div>
+
+      <SignInModal open={showSignIn} onOpenChange={setShowSignIn} />
+    </>
   );
 }
 
