@@ -4,6 +4,12 @@ Every government-sponsored mass wedding in Nigeria over the past decade, plotted
 
 In August 2026 Kano married 1,500 couples in a single two-day ceremony and the story travelled the world as a curiosity. It isn't one. Northern state governments have been running these programmes every year for a decade — Kano, Katsina, Kebbi, Sokoto, Zamfara, Bauchi, Gombe, Jigawa — usually through their Hisbah boards, usually paying the dowry, usually aimed at widows, divorcees and couples who cannot afford to marry. This map shows the whole pattern at once, and how sharply it stops at the middle belt.
 
+![Mass Weddings Held](https://files.catbox.moe/79jv8h.png)
+
+![Multidimensional Poverty](https://files.catbox.moe/6avn9n.png)
+
+![Globe](https://files.catbox.moe/efntsn.png)
+
 ## What it shows
 
 **The map.** Each circle is one ceremony, sized by the number of couples and coloured by who paid for it — state government, Hisbah board, emirate council, philanthropist. Circles outlined in white were announced but never confirmed as held. States are filled by whichever variable you pick: ceremonies held, multidimensional poverty, median age at first marriage, household electricity, population, or FAAC allocation — each labelled with the year of its source. Switching the fill from *ceremonies* to *age at first marriage* is the whole argument in one click: the states running these programmes are the states where women marry at 15 to 17.
