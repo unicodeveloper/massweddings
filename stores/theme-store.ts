@@ -43,7 +43,11 @@ function applyTheme(resolvedTheme: ResolvedTheme): void {
   document.documentElement.style.colorScheme = resolvedTheme;
 
   const themeColor = resolvedTheme === "dark" ? DARK_THEME_COLOR : LIGHT_THEME_COLOR;
-  document.querySelector('meta[name="theme-color"]')?.setAttribute("content", themeColor);
+  // The viewport export ships one theme-color meta per OS media query and the
+  // browser honours whichever matches, so point both at the resolved colour.
+  document.querySelectorAll('meta[name="theme-color"]').forEach((meta) => {
+    meta.setAttribute("content", themeColor);
+  });
 }
 
 function watchSystemTheme(theme: ThemeMode, set: (state: Partial<ThemeState>) => void): void {

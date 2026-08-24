@@ -5,13 +5,14 @@ import { useWeddingsStore } from "@/stores/weddings-store";
 import { AccountButton } from "@/components/auth/account-button";
 import { Logo } from "@/components/logo";
 import { ThemeToggle } from "@/components/theme-toggle";
+import { cn } from "@/lib/utils";
 
 interface HeaderProps {
   onRebuild: () => void;
 }
 
 export function Header({ onRebuild }: HeaderProps) {
-  const { isRebuilding, builtAt, rebuildAllowed, error } = useWeddingsStore();
+  const { isRebuilding, builtAt, rebuildAllowed, isLoading, error } = useWeddingsStore();
 
   return (
     <header className="flex h-14 shrink-0 items-center justify-between gap-2 border-b border-border bg-card px-3 md:px-4">
@@ -35,7 +36,7 @@ export function Header({ onRebuild }: HeaderProps) {
         <AccountButton />
         <ThemeToggle />
 
-        {rebuildAllowed && (
+        {(rebuildAllowed || isLoading) && (
           <button
             onClick={onRebuild}
             disabled={isRebuilding}
@@ -45,7 +46,10 @@ export function Header({ onRebuild }: HeaderProps) {
                 : "Build the dataset from scratch. Takes several minutes."
             }
             aria-label={isRebuilding ? "Rebuilding dataset" : "Rebuild dataset"}
-            className="flex min-h-11 min-w-11 items-center justify-center gap-1.5 rounded-md border border-border px-2.5 text-xs transition-colors hover:bg-accent disabled:opacity-60 lg:min-h-0 lg:min-w-0 lg:px-3 lg:py-1.5"
+            className={cn(
+              "flex min-h-11 min-w-11 items-center justify-center gap-1.5 rounded-md border border-border px-2.5 text-xs transition-colors hover:bg-accent disabled:opacity-60 lg:min-h-0 lg:min-w-0 lg:px-3 lg:py-1.5",
+              !rebuildAllowed && "invisible"
+            )}
           >
             {isRebuilding ? (
               <Loader2 className="h-3.5 w-3.5 animate-spin" />

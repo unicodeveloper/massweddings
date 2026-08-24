@@ -87,24 +87,26 @@ function EmptyState({
             "The map reads a cached dataset built by the Valyu pipeline. Run the build once to populate it."}
         </p>
         {rebuildAllowed ? (
-          <button
-            onClick={onRebuild}
-            disabled={isRebuilding}
-            className="inline-flex items-center gap-2 rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground transition-opacity hover:opacity-90 disabled:opacity-60"
-          >
-            {isRebuilding && <Loader2 className="h-4 w-4 animate-spin" />}
-            {isRebuilding ? "Building — this takes a few minutes…" : "Build the dataset"}
-          </button>
+          <>
+            <button
+              onClick={onRebuild}
+              disabled={isRebuilding}
+              className="inline-flex items-center gap-2 rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground transition-opacity hover:opacity-90 disabled:opacity-60"
+            >
+              {isRebuilding && <Loader2 className="h-4 w-4 animate-spin" />}
+              {isRebuilding ? "Building — this takes a few minutes…" : "Build the dataset"}
+            </button>
+            <p className="text-xs text-muted-foreground">
+              Roughly 60 searches plus a per-state sweep. You can also run{" "}
+              <code className="rounded bg-muted px-1">npm run seed</code>.
+            </p>
+          </>
         ) : (
           <p className="text-xs text-muted-foreground">
-            Rebuilds are disabled on this deployment. Run the seed script locally, or enable
-            rebuilds explicitly for a controlled refresh.
+            This deployment keeps rebuilds disabled, so the map stays empty until its owner
+            publishes a dataset.
           </p>
         )}
-        <p className="text-xs text-muted-foreground">
-          Roughly 60 searches plus a per-state sweep. You can also run{" "}
-          <code className="rounded bg-muted px-1">npm run seed</code>.
-        </p>
       </div>
     </div>
   );

@@ -18,6 +18,7 @@ import { useWeddingsStore } from "@/stores/weddings-store";
 import { buildScale, computeStateMetrics, metricValue, NO_DATA_COLOUR } from "@/lib/metrics";
 import { normaliseBoundaryName } from "@/lib/nigeria";
 import { sponsorColors } from "@/types";
+import mapboxgl from "mapbox-gl";
 import { EventPopup } from "./event-popup";
 import { MapLegend } from "./map-legend";
 
@@ -69,6 +70,16 @@ export function NigeriaMap() {
       .then((data: BoundaryCollection) => setBoundaries(data))
       .catch(() => setBoundaryError(true));
   }, []);
+
+  // Pre-warm the browser's HTTP cache for the style we are *not* showing, so
+  // toggling light/dark swaps the basemap without a visible network stall. The
+  // URL mirrors exactly what mapbox-gl requests (same sdk + access_token query).
+  useEffect(() => {
+    if (!MAPBOX_TOKEN) return;
+    const otherStyle = resolvedTheme === "light" ? "dark-v11" : "light-v11";
+    const url = `https://api.mapbox.com/styles/v1/mapbox/${otherStyle}?sdk=js-${mapboxgl.version}&access_token=${MAPBOX_TOKEN}`;
+    fetch(url).catch(() => {});
+  }, [resolvedTheme]);
 
   const stateMetrics = useMemo(() => computeStateMetrics(filteredEvents), [filteredEvents]);
 
