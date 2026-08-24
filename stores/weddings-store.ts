@@ -16,6 +16,7 @@ interface WeddingsState {
   stats: WeddingDataset["stats"] | null;
   isLoading: boolean;
   isRebuilding: boolean;
+  rebuildAllowed: boolean;
   error: string | null;
 
   selectedEvent: WeddingEvent | null;
@@ -32,6 +33,7 @@ interface WeddingsState {
   setDataset: (dataset: WeddingDataset) => void;
   setLoading: (loading: boolean) => void;
   setRebuilding: (rebuilding: boolean) => void;
+  setRebuildAllowed: (allowed: boolean) => void;
   setError: (error: string | null) => void;
   selectEvent: (event: WeddingEvent | null) => void;
   selectState: (state: string | null) => void;
@@ -98,6 +100,7 @@ export const useWeddingsStore = create<WeddingsState>((set, get) => ({
   stats: null,
   isLoading: true,
   isRebuilding: false,
+  rebuildAllowed: false,
   error: null,
   selectedEvent: null,
   selectedState: null,
@@ -119,6 +122,7 @@ export const useWeddingsStore = create<WeddingsState>((set, get) => ({
 
   setLoading: (isLoading) => set({ isLoading }),
   setRebuilding: (isRebuilding) => set({ isRebuilding }),
+  setRebuildAllowed: (rebuildAllowed) => set({ rebuildAllowed }),
   setError: (error) => set({ error }),
   selectEvent: (selectedEvent) => set({ selectedEvent }),
   selectState: (selectedState) => set({ selectedState }),

@@ -63,7 +63,7 @@ export function AccountButton() {
           <p className="truncate text-xs font-medium">{user.name || "Signed in"}</p>
           <p className="truncate text-[11px] text-muted-foreground">{user.email}</p>
           <p className="mt-2 border-t border-border pt-2 text-[10px] leading-relaxed text-muted-foreground">
-            Live Feed and Intel searches run on your Valyu credits.
+            Live Feed, Intel and state briefings run on your Valyu credits.
           </p>
           <button
             onClick={() => {

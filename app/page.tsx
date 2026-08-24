@@ -18,7 +18,7 @@ import { CreditErrorBanner } from "@/components/credit-error-banner";
 import { AuthInitializer } from "@/components/auth";
 
 export default function Home() {
-  const { rebuild, isLoading, isRebuilding } = useWeddings();
+  const { rebuild, isLoading, isRebuilding, rebuildAllowed } = useWeddings();
   const { events, error } = useWeddingsStore();
   const mobileView = useUiStore((state) => state.mobileView);
 
@@ -41,7 +41,12 @@ export default function Home() {
             )}
           >
             {isEmpty ? (
-              <EmptyState onRebuild={rebuild} isRebuilding={isRebuilding} message={error} />
+              <EmptyState
+                onRebuild={rebuild}
+                isRebuilding={isRebuilding}
+                rebuildAllowed={rebuildAllowed}
+                message={error}
+              />
             ) : (
               <>
                 <NigeriaMap />
@@ -65,10 +70,12 @@ export default function Home() {
 function EmptyState({
   onRebuild,
   isRebuilding,
+  rebuildAllowed,
   message,
 }: {
   onRebuild: () => void;
   isRebuilding: boolean;
+  rebuildAllowed: boolean;
   message: string | null;
 }) {
   return (
@@ -79,18 +86,27 @@ function EmptyState({
           {message ??
             "The map reads a cached dataset built by the Valyu pipeline. Run the build once to populate it."}
         </p>
-        <button
-          onClick={onRebuild}
-          disabled={isRebuilding}
-          className="inline-flex items-center gap-2 rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground transition-opacity hover:opacity-90 disabled:opacity-60"
-        >
-          {isRebuilding && <Loader2 className="h-4 w-4 animate-spin" />}
-          {isRebuilding ? "Building — this takes a few minutes…" : "Build the dataset"}
-        </button>
-        <p className="text-xs text-muted-foreground">
-          Roughly 60 searches plus a per-state sweep. You can also run{" "}
-          <code className="rounded bg-muted px-1">npm run seed</code>.
-        </p>
+        {rebuildAllowed ? (
+          <>
+            <button
+              onClick={onRebuild}
+              disabled={isRebuilding}
+              className="inline-flex items-center gap-2 rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground transition-opacity hover:opacity-90 disabled:opacity-60"
+            >
+              {isRebuilding && <Loader2 className="h-4 w-4 animate-spin" />}
+              {isRebuilding ? "Building — this takes a few minutes…" : "Build the dataset"}
+            </button>
+            <p className="text-xs text-muted-foreground">
+              Roughly 60 searches plus a per-state sweep. You can also run{" "}
+              <code className="rounded bg-muted px-1">npm run seed</code>.
+            </p>
+          </>
+        ) : (
+          <p className="text-xs text-muted-foreground">
+            This deployment keeps rebuilds disabled, so the map stays empty until its owner
+            publishes a dataset.
+          </p>
+        )}
       </div>
     </div>
   );

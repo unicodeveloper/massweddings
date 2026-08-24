@@ -36,8 +36,8 @@ function looksLikeCreditError(message: string): boolean {
 /**
  * Call Valyu on behalf of a signed-in user, through the platform's OAuth proxy.
  *
- * The interactive features — Live Feed and Intel — run through here rather than
- * the server's own API key, so the credits spent belong to whoever is signed in.
+ * The interactive hosted-mode features run through here rather than the server's
+ * own API key, so the credits spent belong to whoever is signed in.
  */
 export async function callAsUser(
   path: string,

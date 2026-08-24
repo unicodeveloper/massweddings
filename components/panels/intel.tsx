@@ -175,7 +175,7 @@ function IntelContent() {
               {result.query}
             </p>
 
-            <div className="prose prose-invert max-w-none text-xs leading-relaxed [&_h2]:mt-3 [&_h2]:text-sm [&_h3]:mt-3 [&_h3]:text-xs [&_li]:my-0.5 [&_p]:my-2 [&_table]:text-[10px]">
+            <div className="prose max-w-none text-xs leading-relaxed dark:prose-invert [&_h2]:mt-3 [&_h2]:text-sm [&_h3]:mt-3 [&_h3]:text-xs [&_li]:my-0.5 [&_p]:my-2 [&_table]:text-[10px]">
               <ReactMarkdown remarkPlugins={[remarkGfm]}>{result.answer}</ReactMarkdown>
             </div>
 

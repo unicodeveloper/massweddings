@@ -42,7 +42,7 @@ export function SignInGate({
           Sign in with Valyu
         </button>
         <p className="text-[10px] text-muted-foreground">
-          The map and every chart stay open to everyone — only live search needs a session.
+          The map and every chart stay open to everyone — only live Valyu searches need a session.
         </p>
       </div>
 

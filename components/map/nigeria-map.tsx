@@ -13,10 +13,12 @@ import MapGL, {
   type MapRef,
 } from "react-map-gl/mapbox";
 import { useMapStore, NIGERIA_BOUNDS } from "@/stores/map-store";
+import { useThemeStore } from "@/stores/theme-store";
 import { useWeddingsStore } from "@/stores/weddings-store";
 import { buildScale, computeStateMetrics, metricValue, NO_DATA_COLOUR } from "@/lib/metrics";
 import { normaliseBoundaryName } from "@/lib/nigeria";
 import { sponsorColors } from "@/types";
+import mapboxgl from "mapbox-gl";
 import { EventPopup } from "./event-popup";
 import { MapLegend } from "./map-legend";
 
@@ -59,6 +61,8 @@ export function NigeriaMap() {
     projection,
   } = useMapStore();
   const { filteredEvents, selectedEvent, selectEvent, selectState } = useWeddingsStore();
+  const resolvedTheme = useThemeStore((state) => state.resolvedTheme);
+  const noDataColour = resolvedTheme === "light" ? "#e2e8f0" : NO_DATA_COLOUR;
 
   useEffect(() => {
     fetch("/nigeria-states.geojson")
@@ -66,6 +70,16 @@ export function NigeriaMap() {
       .then((data: BoundaryCollection) => setBoundaries(data))
       .catch(() => setBoundaryError(true));
   }, []);
+
+  // Pre-warm the browser's HTTP cache for the style we are *not* showing, so
+  // toggling light/dark swaps the basemap without a visible network stall. The
+  // URL mirrors exactly what mapbox-gl requests (same sdk + access_token query).
+  useEffect(() => {
+    if (!MAPBOX_TOKEN) return;
+    const otherStyle = resolvedTheme === "light" ? "dark-v11" : "light-v11";
+    const url = `https://api.mapbox.com/styles/v1/mapbox/${otherStyle}?sdk=js-${mapboxgl.version}&access_token=${MAPBOX_TOKEN}`;
+    fetch(url).catch(() => {});
+  }, [resolvedTheme]);
 
   const stateMetrics = useMemo(() => computeStateMetrics(filteredEvents), [filteredEvents]);
 
@@ -153,14 +167,14 @@ export function NigeriaMap() {
             ? ([
                 "case",
                 ["!", ["get", "hasValue"]],
-                NO_DATA_COLOUR,
+                noDataColour,
                 ["step", ["get", "value"], scale.colours[0], ...scale.stops.flatMap((stop, index) => [stop, scale.colours[index + 1]])],
               ] as unknown as string)
-            : NO_DATA_COLOUR,
+            : noDataColour,
         "fill-opacity": choropleth === "none" ? 0.15 : 0.72,
       },
     }),
-    [scale, choropleth]
+    [scale, choropleth, noDataColour]
   );
 
   const outlineLayer: LayerProps = useMemo(
@@ -171,8 +185,8 @@ export function NigeriaMap() {
         "line-color": [
           "case",
           ["==", ["get", "state"], hoveredState ?? ""],
-          "#ffffff",
-          "rgba(148, 163, 184, 0.45)",
+          resolvedTheme === "light" ? "#111827" : "#ffffff",
+          resolvedTheme === "light" ? "rgba(51, 65, 85, 0.38)" : "rgba(148, 163, 184, 0.45)",
         ] as unknown as string,
         "line-width": [
           "case",
@@ -182,7 +196,7 @@ export function NigeriaMap() {
         ] as unknown as number,
       },
     }),
-    [hoveredState]
+    [hoveredState, resolvedTheme]
   );
 
   const stateLabelLayer: LayerProps = {
@@ -195,8 +209,10 @@ export function NigeriaMap() {
       "text-allow-overlap": false,
     },
     paint: {
-      "text-color": "rgba(226, 232, 240, 0.85)",
-      "text-halo-color": "rgba(2, 6, 23, 0.9)",
+      "text-color":
+        resolvedTheme === "light" ? "rgba(15, 23, 42, 0.82)" : "rgba(226, 232, 240, 0.85)",
+      "text-halo-color":
+        resolvedTheme === "light" ? "rgba(248, 250, 252, 0.92)" : "rgba(2, 6, 23, 0.9)",
       "text-halo-width": 1.4,
     },
   };
@@ -218,7 +234,12 @@ export function NigeriaMap() {
       "circle-color": ["get", "colour"],
       "circle-opacity": 0.72,
       "circle-stroke-width": ["case", ["==", ["get", "held"], 0], 2, 1.4],
-      "circle-stroke-color": ["case", ["==", ["get", "held"], 0], "#f8fafc", "rgba(255,255,255,0.85)"],
+      "circle-stroke-color": [
+        "case",
+        ["==", ["get", "held"], 0],
+        resolvedTheme === "light" ? "#0f172a" : "#f8fafc",
+        resolvedTheme === "light" ? "rgba(15, 23, 42, 0.65)" : "rgba(255,255,255,0.85)",
+      ],
     },
   } as unknown as LayerProps;
 
@@ -291,7 +312,11 @@ export function NigeriaMap() {
         {...viewport}
         onMove={(event) => setViewport(event.viewState)}
         mapboxAccessToken={MAPBOX_TOKEN}
-        mapStyle="mapbox://styles/mapbox/dark-v11"
+        mapStyle={
+          resolvedTheme === "light"
+            ? "mapbox://styles/mapbox/light-v11"
+            : "mapbox://styles/mapbox/dark-v11"
+        }
         projection={{ name: projection }}
         // Globe needs the surrounding world visible, so the leash comes off.
         maxBounds={projection === "globe" ? undefined : NIGERIA_BOUNDS}

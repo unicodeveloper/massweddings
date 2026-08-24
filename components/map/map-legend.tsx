@@ -1,6 +1,7 @@
 "use client";
 
 import { useMapStore } from "@/stores/map-store";
+import { useThemeStore } from "@/stores/theme-store";
 import { formatMetric, NO_DATA_COLOUR, type Scale } from "@/lib/metrics";
 import { choroplethLabels, sponsorColors, sponsorLabels, type SponsorType } from "@/types";
 
@@ -9,6 +10,8 @@ const LEGEND_SPONSORS: SponsorType[] = ["state-government", "hisbah", "emirate",
 
 export function MapLegend({ scale }: { scale: Scale | null }) {
   const { choropleth, showBubbles } = useMapStore();
+  const resolvedTheme = useThemeStore((state) => state.resolvedTheme);
+  const noDataColour = resolvedTheme === "light" ? "#e2e8f0" : NO_DATA_COLOUR;
 
   return (
     // Hidden on phones: the timeline already occupies the bottom of the map, and
@@ -32,7 +35,7 @@ export function MapLegend({ scale }: { scale: Scale | null }) {
           <div className="mt-2 flex items-center gap-1.5 text-[10px] text-muted-foreground">
             <span
               className="h-2.5 w-2.5 rounded-sm border border-border"
-              style={{ backgroundColor: NO_DATA_COLOUR }}
+              style={{ backgroundColor: noDataColour }}
             />
             no data
           </div>
@@ -55,7 +58,7 @@ export function MapLegend({ scale }: { scale: Scale | null }) {
               </li>
             ))}
             <li className="flex items-center gap-2 pt-1 text-[11px] text-muted-foreground">
-              <span className="h-2.5 w-2.5 rounded-full border-2 border-white bg-transparent" />
+              <span className="h-2.5 w-2.5 rounded-full border-2 border-foreground bg-transparent" />
               announced only
             </li>
           </ul>

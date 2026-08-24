@@ -13,21 +13,29 @@ export const dynamic = "force-dynamic";
 /** The full pipeline runs dozens of searches and hundreds of extractions. */
 export const maxDuration = 800;
 
+function isRebuildAllowed(): boolean {
+  return process.env.NODE_ENV === "development" || process.env.ALLOW_REBUILD === "true";
+}
+
 /** Serve the cached dataset. */
 export async function GET() {
   const dataset = await readDataset();
+  const rebuildAllowed = isRebuildAllowed();
 
   if (!dataset) {
     return NextResponse.json(
       {
         error: "No dataset yet",
-        message: "Run the build once to populate the map (npm run seed, or the Rebuild button).",
+        rebuildAllowed,
+        message: rebuildAllowed
+          ? "Run the build once to populate the map (npm run seed, or the Rebuild button)."
+          : "No cached dataset is available on this deployment.",
       },
       { status: 404 }
     );
   }
 
-  return NextResponse.json(dataset);
+  return NextResponse.json({ ...dataset, rebuildAllowed });
 }
 
 /**
@@ -40,12 +48,18 @@ export async function GET() {
  *   { }                                  → everything in one call
  */
 export async function POST(request: Request) {
-  if (process.env.ALLOW_REBUILD === "false") {
-    return NextResponse.json({ error: "Rebuilds are disabled on this deployment" }, { status: 403 });
+  if (!isRebuildAllowed()) {
+    return NextResponse.json(
+      { error: "Rebuilds are disabled on this deployment", rebuildAllowed: false },
+      { status: 403 }
+    );
   }
 
   if (!process.env.VALYU_API_KEY) {
-    return NextResponse.json({ error: "VALYU_API_KEY is not configured" }, { status: 500 });
+    return NextResponse.json(
+      { error: "VALYU_API_KEY is not configured", rebuildAllowed: true },
+      { status: 500 }
+    );
   }
 
   let stage: string | undefined;
@@ -90,6 +104,7 @@ export async function POST(request: Request) {
 
     return NextResponse.json({
       ...dataset,
+      rebuildAllowed: true,
       buildSeconds: Math.round((Date.now() - started) / 1000),
       aiExtraction: isAIExtractionEnabled(),
     });
