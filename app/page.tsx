@@ -1,7 +1,9 @@
 "use client";
 
+import { Suspense } from "react";
 import { Loader2 } from "lucide-react";
 import { useWeddings } from "@/hooks/use-weddings";
+import { useUrlSync } from "@/hooks/use-url-sync";
 import { useWeddingsStore } from "@/stores/weddings-store";
 import { useUiStore } from "@/stores/ui-store";
 import { cn } from "@/lib/utils";
@@ -18,7 +20,17 @@ import { CreditErrorBanner } from "@/components/credit-error-banner";
 import { AuthInitializer } from "@/components/auth";
 
 export default function Home() {
+  // useSearchParams (inside useUrlSync) requires a Suspense boundary in the App Router.
+  return (
+    <Suspense fallback={null}>
+      <HomeInner />
+    </Suspense>
+  );
+}
+
+function HomeInner() {
   const { rebuild, isLoading, isRebuilding } = useWeddings();
+  useUrlSync();
   const { events, error } = useWeddingsStore();
   const mobileView = useUiStore((state) => state.mobileView);
 
